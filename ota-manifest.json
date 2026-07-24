@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "version": "2.2.75",
-  "tag": "v2.2.75",
-  "releaseName": "Smoke Tester 2.2.75",
-  "assetName": "firmware-2.2.75.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.75/firmware-2.2.75.bin",
-  "sizeBytes": 1249056,
-  "sha256": "c4f91ab069ae1976d78d1136ef1ca5439c14bce08ff3c9b63f3203a5030339ba"
+  "version": "2.2.76",
+  "tag": "v2.2.76",
+  "releaseName": "Smoke Tester 2.2.76",
+  "assetName": "firmware-2.2.76.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.76/firmware-2.2.76.bin",
+  "sizeBytes": 1249216,
+  "sha256": "b1a042d13a9e8ebf8cc31eb5c23c722c870d953fe38455ee7b92dde4e7982f04"
 }
