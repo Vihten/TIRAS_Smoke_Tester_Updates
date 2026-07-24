@@ -5,7 +5,7 @@
   "releaseName": "Smoke Tester 2.2.81",
   "assetName": "firmware-2.2.81.bin",
   "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.81/firmware-2.2.81.bin",
-  "sizeBytes": 1255696,
+  "sizeBytes": 1257504,
   "sha256": "e7b3af510a14ad41f36c19249a2bad4a3a6e12d001c3dfdf182a21f5e1b39d77",
   "twinButton": {
     "version": "1.1.5",
