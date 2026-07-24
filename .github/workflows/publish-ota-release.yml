@@ -26,10 +26,12 @@ jobs:
           manifest_version="$(jq -r '.version' ota-manifest.json)"
           manifest_tag="$(jq -r '.tag' ota-manifest.json)"
           twin_version="$(jq -r '.twinButton.version' ota-manifest.json)"
+          twin_bootloader="$(jq -r '.twinButton.bootloader.assetName' ota-manifest.json)"
           asset_dir="release-assets/${GITHUB_REF_NAME}"
           smoke="${asset_dir}/firmware-${version}.bin"
           twin_bin="${asset_dir}/twin-button-${twin_version}.bin"
           twin_dat="${asset_dir}/twin-button-${twin_version}.dat"
+          twin_bootloader="${asset_dir}/${twin_bootloader}"
           checksums="${asset_dir}/SHA256SUMS.txt"
 
           test "${manifest_version}" = "${version}"
@@ -37,6 +39,7 @@ jobs:
           test -s "${smoke}"
           test -s "${twin_bin}"
           test -s "${twin_dat}"
+          test -s "${twin_bootloader}"
           test -s "${checksums}"
           sha256sum --check "${checksums}"
 
@@ -44,9 +47,10 @@ jobs:
             "${smoke}" \
             "${twin_bin}" \
             "${twin_dat}" \
+            "${twin_bootloader}" \
             "${checksums}" \
             --repo "${GITHUB_REPOSITORY}" \
             --verify-tag \
             --latest \
             --title "Smoke Tester ${version}" \
-            --notes "Persistent Twin DFU diagnostics and fixed application-to-bootloader handoff. Includes Twin Button 1.1.9."
+            --notes "Synchronized, smooth foreground DFU indication for Smoke Tester and Twin Button. Includes Twin Button 1.1.10 and the one-time Twin LED bootloader."
