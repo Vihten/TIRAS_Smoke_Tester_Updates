@@ -1,0 +1,3 @@
+f5be86646713c0a59df55db0b84659ec4b11a0d3b7ac2ef3c7c832e16fa9c225  release-assets/v2.2.89/firmware-2.2.89.bin
+b0bbb474d4f2e2737d4149a4896df2160889ff1f0cab6612d0b17ee09d4b6323  release-assets/v2.2.89/twin-button-1.1.9.bin
+ecb215eb17547d4b066466fde81386583d698734a9451085a82750b152ac8387  release-assets/v2.2.89/twin-button-1.1.9.dat
