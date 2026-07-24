@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - "v*"
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-ota-release.yml"
+      - "ota-manifest.json"
+      - "release-assets/**"
 
 permissions:
   contents: write
@@ -22,12 +28,18 @@ jobs:
         run: |
           set -euo pipefail
 
-          version="${GITHUB_REF_NAME#v}"
+          if [[ "${GITHUB_REF_TYPE}" = "tag" ]]; then
+            release_tag="${GITHUB_REF_NAME}"
+          else
+            release_tag="$(jq -r '.tag' ota-manifest.json)"
+          fi
+
+          version="${release_tag#v}"
           manifest_version="$(jq -r '.version' ota-manifest.json)"
           manifest_tag="$(jq -r '.tag' ota-manifest.json)"
           twin_version="$(jq -r '.twinButton.version' ota-manifest.json)"
           twin_bootloader="$(jq -r '.twinButton.bootloader.assetName' ota-manifest.json)"
-          asset_dir="release-assets/${GITHUB_REF_NAME}"
+          asset_dir="release-assets/${release_tag}"
           smoke="${asset_dir}/firmware-${version}.bin"
           twin_bin="${asset_dir}/twin-button-${twin_version}.bin"
           twin_dat="${asset_dir}/twin-button-${twin_version}.dat"
@@ -35,7 +47,7 @@ jobs:
           checksums="${asset_dir}/SHA256SUMS.txt"
 
           test "${manifest_version}" = "${version}"
-          test "${manifest_tag}" = "${GITHUB_REF_NAME}"
+          test "${manifest_tag}" = "${release_tag}"
           test -s "${smoke}"
           test -s "${twin_bin}"
           test -s "${twin_dat}"
@@ -43,14 +55,28 @@ jobs:
           test -s "${checksums}"
           sha256sum --check "${checksums}"
 
-          gh release create "${GITHUB_REF_NAME}" \
-            "${smoke}" \
-            "${twin_bin}" \
-            "${twin_dat}" \
-            "${twin_bootloader}" \
-            "${checksums}" \
-            --repo "${GITHUB_REPOSITORY}" \
-            --verify-tag \
-            --latest \
-            --title "Smoke Tester ${version}" \
-            --notes "Synchronized, smooth foreground DFU indication for Smoke Tester and Twin Button. Includes Twin Button 1.1.10 and the one-time Twin LED bootloader."
+          assets=(
+            "${smoke}"
+            "${twin_bin}"
+            "${twin_dat}"
+            "${twin_bootloader}"
+            "${checksums}"
+          )
+
+          if gh release view "${release_tag}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
+            gh release upload "${release_tag}" "${assets[@]}" \
+              --repo "${GITHUB_REPOSITORY}" \
+              --clobber
+            gh release edit "${release_tag}" \
+              --repo "${GITHUB_REPOSITORY}" \
+              --latest \
+              --title "Smoke Tester ${version}" \
+              --notes "Synchronized, smooth foreground DFU indication for Smoke Tester and Twin Button. Includes Twin Button ${twin_version} and the one-time Twin LED bootloader."
+          else
+            gh release create "${release_tag}" "${assets[@]}" \
+              --repo "${GITHUB_REPOSITORY}" \
+              --verify-tag \
+              --latest \
+              --title "Smoke Tester ${version}" \
+              --notes "Synchronized, smooth foreground DFU indication for Smoke Tester and Twin Button. Includes Twin Button ${twin_version} and the one-time Twin LED bootloader."
+          fi
