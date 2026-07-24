@@ -75,12 +75,12 @@ jobs:
               --repo "${GITHUB_REPOSITORY}" \
               --latest \
               --title "Smoke Tester ${version}" \
-              --notes "Smooth phase-synchronized generation indication for Smoke Tester and Twin Button. Includes Twin Button ${twin_version} and the one-time Twin LED bootloader."
+              --notes "Reliable first app handshake and synchronized foreground Twin Button DFU. Smoke keeps the update indication through Twin reboot, verifies the reconnected image, and includes Twin Button ${twin_version} plus the one-time Twin LED bootloader."
           else
             gh release create "${release_tag}" "${assets[@]}" \
               --repo "${GITHUB_REPOSITORY}" \
               --verify-tag \
               --latest \
               --title "Smoke Tester ${version}" \
-              --notes "Smooth phase-synchronized generation indication for Smoke Tester and Twin Button. Includes Twin Button ${twin_version} and the one-time Twin LED bootloader."
+              --notes "Reliable first app handshake and synchronized foreground Twin Button DFU. Smoke keeps the update indication through Twin reboot, verifies the reconnected image, and includes Twin Button ${twin_version} plus the one-time Twin LED bootloader."
           fi
