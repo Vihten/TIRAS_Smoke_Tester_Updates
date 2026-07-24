@@ -1,23 +1,23 @@
 {
   "schema": 1,
-  "version": "2.2.85",
-  "tag": "v2.2.85",
-  "releaseName": "Smoke Tester 2.2.85",
-  "assetName": "firmware-2.2.85.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.85/firmware-2.2.85.bin",
+  "version": "2.2.86",
+  "tag": "v2.2.86",
+  "releaseName": "Smoke Tester 2.2.86",
+  "assetName": "firmware-2.2.86.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.86/firmware-2.2.86.bin",
   "sizeBytes": 1416752,
-  "sha256": "4e4bfa8d827f09671549dfbbf432083a5834673fbb49da944f0808b094a1090a",
+  "sha256": "51abc990fcec88e488f00ce48fe6d570b2ed3577158155c44d75060592181ce0",
   "twinButton": {
     "version": "1.1.6",
     "bin": {
       "assetName": "twin-button-1.1.6.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.85/twin-button-1.1.6.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.86/twin-button-1.1.6.bin",
       "sizeBytes": 158516,
       "sha256": "eec82485788a5f6e4e752a910a3bc23f87307bfbf46a29d86ad9827fe447945d"
     },
     "dat": {
       "assetName": "twin-button-1.1.6.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.85/twin-button-1.1.6.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.86/twin-button-1.1.6.dat",
       "sizeBytes": 14,
       "sha256": "ed02c245d54534097f6411eb0547925ed8cbc3544523dd4c73804c73b232a2ba"
     }
