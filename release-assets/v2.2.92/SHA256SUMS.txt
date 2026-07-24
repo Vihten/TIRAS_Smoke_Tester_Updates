@@ -1,4 +1,4 @@
-89eea5e7475f3b21dc6f52d2ed44c7b3ba2d12d25e2d21eaba438a33e41191d5  firmware-2.2.92.bin
-441ee7fc4ab6215816b06e101bb86ddfe090e18dc3c1b91028e23b78349c0eff  twin-button-1.1.12.bin
-8a6baf73da4aff1b0575d317eb9d80f9817c10c996d47ab0038a9af082f5c914  twin-button-1.1.12.dat
-97cad75fd8cc02fc539e23b789df29f4ba6a53c3e5fd429ffc9b67745dce1903  twin-button-bootloader-0.11.0-tiras1.uf2
+89eea5e7475f3b21dc6f52d2ed44c7b3ba2d12d25e2d21eaba438a33e41191d5  release-assets/v2.2.92/firmware-2.2.92.bin
+441ee7fc4ab6215816b06e101bb86ddfe090e18dc3c1b91028e23b78349c0eff  release-assets/v2.2.92/twin-button-1.1.12.bin
+8a6baf73da4aff1b0575d317eb9d80f9817c10c996d47ab0038a9af082f5c914  release-assets/v2.2.92/twin-button-1.1.12.dat
+97cad75fd8cc02fc539e23b789df29f4ba6a53c3e5fd429ffc9b67745dce1903  release-assets/v2.2.92/twin-button-bootloader-0.11.0-tiras1.uf2
