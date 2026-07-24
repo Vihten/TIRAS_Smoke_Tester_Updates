@@ -26,7 +26,7 @@
       "assetName": "twin-button-bootloader-0.11.0-tiras1.uf2",
       "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.90/twin-button-bootloader-0.11.0-tiras1.uf2",
       "sizeBytes": 72704,
-      "sha256": "f37cb51502d504726f160041061df84d65bdabf379701b2172853eb9ab2f19bb",
+      "sha256": "97cad75fd8cc02fc539e23b789df29f4ba6a53c3e5fd429ffc9b67745dce1903",
       "installation": "one-time-usb-uf2"
     }
   }
