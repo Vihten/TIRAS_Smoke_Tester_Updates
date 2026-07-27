@@ -1,33 +1,33 @@
 {
   "schema": 1,
-  "version": "2.2.93",
-  "tag": "v2.2.93",
-  "releaseName": "Smoke Tester 2.2.93",
-  "notes": "Every detected error now stops active smoke generation. Timeout is recorded as a completed event after its audible cue, does not remain as an active notification, and allows an immediate deliberate restart. IR auto-start requires the obstacle to clear and reappear, while the app receives the authoritative generation timeout countdown. Includes Twin Button 1.1.12 and the one-time Twin LED bootloader.",
-  "assetName": "firmware-2.2.93.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.93/firmware-2.2.93.bin",
-  "sizeBytes": 1434608,
-  "sha256": "7d0b499bccfaf19430d0c349fdd3973e5e09edb1c52b13c7e16d55599e175c91",
+  "version": "2.2.94",
+  "tag": "v2.2.94",
+  "releaseName": "Smoke Tester 2.2.94",
+  "notes": "Smoke Tester now recovers Twin Button OTA after application or bootloader link loss with bounded retries, orphan-bootloader discovery, persisted resume across a Smoke reboot, and post-update version verification. Twin Button 1.1.13 restores the battery-to-blue search transition and retries advertising after an out-of-range disconnect. Bootloader 0.11.0-tiras2 removes the synthetic INDEX.HTM file while retaining UF2 and serial recovery.",
+  "assetName": "firmware-2.2.94.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.94/firmware-2.2.94.bin",
+  "sizeBytes": 1437424,
+  "sha256": "a29cde433c332d9acacd54d044fb0ffadc14fed7c65f109906ff75bd5ababc38",
   "twinButton": {
-    "version": "1.1.12",
+    "version": "1.1.13",
     "bin": {
-      "assetName": "twin-button-1.1.12.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.93/twin-button-1.1.12.bin",
-      "sizeBytes": 161628,
-      "sha256": "441ee7fc4ab6215816b06e101bb86ddfe090e18dc3c1b91028e23b78349c0eff"
+      "assetName": "twin-button-1.1.13.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.94/twin-button-1.1.13.bin",
+      "sizeBytes": 162556,
+      "sha256": "1bcb175152b22aef77c8c04a648246a9915926096377722f02faccc022d72b8a"
     },
     "dat": {
-      "assetName": "twin-button-1.1.12.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.93/twin-button-1.1.12.dat",
+      "assetName": "twin-button-1.1.13.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.94/twin-button-1.1.13.dat",
       "sizeBytes": 14,
-      "sha256": "8a6baf73da4aff1b0575d317eb9d80f9817c10c996d47ab0038a9af082f5c914"
+      "sha256": "f462b93ddc3b81cdc0162b8c1c89f44f692c1ecc90f943bf8158c54a4a3d4d5b"
     },
     "bootloader": {
-      "version": "0.11.0-tiras1",
-      "assetName": "twin-button-bootloader-0.11.0-tiras1.uf2",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.93/twin-button-bootloader-0.11.0-tiras1.uf2",
-      "sizeBytes": 72704,
-      "sha256": "97cad75fd8cc02fc539e23b789df29f4ba6a53c3e5fd429ffc9b67745dce1903",
+      "version": "0.11.0-tiras2-no-index",
+      "assetName": "twin-button-bootloader-0.11.0-tiras2-no-index.uf2",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.2.94/twin-button-bootloader-0.11.0-tiras2-no-index.uf2",
+      "sizeBytes": 72192,
+      "sha256": "e9a5ea941977e82369b341a141d5f7eae355c16d9994b17ff73bc4c13a601e53",
       "installation": "one-time-usb-uf2"
     }
   }
