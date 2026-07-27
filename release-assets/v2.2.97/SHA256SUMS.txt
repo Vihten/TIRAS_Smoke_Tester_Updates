@@ -1,0 +1,4 @@
+cbdd92c8aea334f3f0f5f0f1c5424da2239a06ee0a6c7e5a72b0b41769dc9443  release-assets/v2.2.97/firmware-2.2.97.bin
+0952cffea42ae5281887df84d61e59170e31a3a062311594e6a630f23785cf37  release-assets/v2.2.97/twin-button-1.1.16.bin
+69f6eff398b07cbbbed04ee0d98918d495f6ca550f30d02e7f6fc4bf9b1477cc  release-assets/v2.2.97/twin-button-1.1.16.dat
+e9a5ea941977e82369b341a141d5f7eae355c16d9994b17ff73bc4c13a601e53  release-assets/v2.2.97/twin-button-bootloader-0.11.0-tiras2-no-index.uf2
