@@ -41,6 +41,7 @@ jobs:
           version="${release_tag#v}"
           manifest_version="$(jq -r '.version' ota-manifest.json)"
           manifest_tag="$(jq -r '.tag' ota-manifest.json)"
+          release_notes="$(jq -r '.notes' ota-manifest.json)"
           twin_version="$(jq -r '.twinButton.version' ota-manifest.json)"
           twin_bootloader="$(jq -r '.twinButton.bootloader.assetName' ota-manifest.json)"
           asset_dir="release-assets/${release_tag}"
@@ -75,12 +76,12 @@ jobs:
               --repo "${GITHUB_REPOSITORY}" \
               --latest \
               --title "Smoke Tester ${version}" \
-              --notes "Reliable first app handshake and synchronized foreground Twin Button DFU. Smoke keeps the update indication through Twin reboot, verifies the reconnected image, and includes Twin Button ${twin_version} plus the one-time Twin LED bootloader."
+              --notes "${release_notes}"
           else
             gh release create "${release_tag}" "${assets[@]}" \
               --repo "${GITHUB_REPOSITORY}" \
               --verify-tag \
               --latest \
               --title "Smoke Tester ${version}" \
-              --notes "Reliable first app handshake and synchronized foreground Twin Button DFU. Smoke keeps the update indication through Twin reboot, verifies the reconnected image, and includes Twin Button ${twin_version} plus the one-time Twin LED bootloader."
+              --notes "${release_notes}"
           fi
