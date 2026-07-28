@@ -1,0 +1,4 @@
+278c8c1f13787fab4b2a77c70527ae2e1a4fa17ade2c2243b3c25942d21e2d7a  firmware-2.3.12.bin
+557aa9a6816a79bdbde0ab9018a9c3a79def66825ee8c0814836c8fa4ef1680f  twin-button-1.1.28.bin
+1389200046ed2faedefe144d7666e91418a20adcb04fb228bb0eca2c1e83eba6  twin-button-1.1.28.dat
+28f94f387c23790cd47212653130200df22abb5a5303efa0a12133bdbe71deb8  twin-button-bootloader-0.11.0-tiras5-branded-dualbank.uf2
