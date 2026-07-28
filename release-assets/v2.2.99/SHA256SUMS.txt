@@ -1,4 +1,4 @@
-ebcec283ba6e71200130ea2fa518f8b786d350ad991863f1db01972f7da98237  firmware-2.2.99.bin
-a98f1b5f0c8c5e271ff1775e916afbccfd0f94087247aaa737af672750f1ecb2  twin-button-1.1.19.bin
-ead16ba301391dceb60aa74f6d7f97811f3cebf4ef7b1d6f54c848fe42eaca08  twin-button-1.1.19.dat
-c3ede80efecb2397d7a4a71d1aa2787f1375f23fb5bb44fec38aa07058c5ffb9  twin-button-bootloader-0.11.0-tiras4-branded-dualbank.uf2
+ebcec283ba6e71200130ea2fa518f8b786d350ad991863f1db01972f7da98237  release-assets/v2.2.99/firmware-2.2.99.bin
+a98f1b5f0c8c5e271ff1775e916afbccfd0f94087247aaa737af672750f1ecb2  release-assets/v2.2.99/twin-button-1.1.19.bin
+ead16ba301391dceb60aa74f6d7f97811f3cebf4ef7b1d6f54c848fe42eaca08  release-assets/v2.2.99/twin-button-1.1.19.dat
+c3ede80efecb2397d7a4a71d1aa2787f1375f23fb5bb44fec38aa07058c5ffb9  release-assets/v2.2.99/twin-button-bootloader-0.11.0-tiras4-branded-dualbank.uf2
