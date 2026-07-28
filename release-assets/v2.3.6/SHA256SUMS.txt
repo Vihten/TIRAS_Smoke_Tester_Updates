@@ -1,0 +1,4 @@
+24385fcb6f790959b000908febc69219a28eefee375e31c1c5d930c708d0af48  release-assets/v2.3.6/firmware-2.3.6.bin
+723a9cfc294b5d07752f9154cfea8390cb1fe0a8f0f0f954f08d6a65a2ceb996  release-assets/v2.3.6/twin-button-1.1.25.bin
+6c5d014c16b8fa3860a632b44e06b2842ec8086a9a49983981c248b243560621  release-assets/v2.3.6/twin-button-1.1.25.dat
+c3ede80efecb2397d7a4a71d1aa2787f1375f23fb5bb44fec38aa07058c5ffb9  release-assets/v2.3.6/twin-button-bootloader-0.11.0-tiras4-branded-dualbank.uf2

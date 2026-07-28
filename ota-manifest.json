@@ -1,31 +1,31 @@
 {
   "schema": 1,
-  "version": "2.3.5",
-  "tag": "v2.3.5",
-  "releaseName": "Smoke Tester 2.3.5",
-  "notes": "Keeps the Twin Button firmware-update indication continuous across the expected DFU disconnect, reboot and reconnect, then hands off smoothly to the connected state. Smoke Tester starts its white update indication before the first disconnect and maps transfer progress to a 10%-to-100% brightness ceiling. Bundles Twin Button 1.1.24, which preserves the white OTA cue until the post-update session handshake and no longer exposes a purple or link-loss state during recovery.",
-  "assetName": "firmware-2.3.5.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.5/firmware-2.3.5.bin",
-  "sizeBytes": 1441520,
-  "sha256": "ffe35d419abdb5358052c06f2a80c0facbe52c0dcdaa5e207d011d35e72582b6",
+  "version": "2.3.6",
+  "tag": "v2.3.6",
+  "releaseName": "Smoke Tester 2.3.6",
+  "notes": "Makes the Smoke Tester and Twin Button firmware-update indication a bounded foreground state with smooth ownership hand-offs, suppresses error reminders without dropping persistent faults during OTA, and prevents frozen or purple frames after DFU. Bundles Twin Button 1.1.25, which preserves the Smoke Tester session after errors so Start cannot be reinterpreted as Fire Tester Cooling, reconnects quietly after DFU, and maps the power button forward and Start button backward in density settings.",
+  "assetName": "firmware-2.3.6.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.6/firmware-2.3.6.bin",
+  "sizeBytes": 1443328,
+  "sha256": "24385fcb6f790959b000908febc69219a28eefee375e31c1c5d930c708d0af48",
   "twinButton": {
-    "version": "1.1.24",
+    "version": "1.1.25",
     "bin": {
-      "assetName": "twin-button-1.1.24.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.5/twin-button-1.1.24.bin",
-      "sizeBytes": 162124,
-      "sha256": "dbe472aa411ac8f73dd33bffde48e6f14447b26f33db717b7c6f71b49873dc0a"
+      "assetName": "twin-button-1.1.25.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.6/twin-button-1.1.25.bin",
+      "sizeBytes": 163612,
+      "sha256": "723a9cfc294b5d07752f9154cfea8390cb1fe0a8f0f0f954f08d6a65a2ceb996"
     },
     "dat": {
-      "assetName": "twin-button-1.1.24.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.5/twin-button-1.1.24.dat",
+      "assetName": "twin-button-1.1.25.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.6/twin-button-1.1.25.dat",
       "sizeBytes": 14,
-      "sha256": "92776f9cb83fc19fc0d2135c0f43bacd87d07bb85ae18d238523a3883a3ac1c9"
+      "sha256": "6c5d014c16b8fa3860a632b44e06b2842ec8086a9a49983981c248b243560621"
     },
     "bootloader": {
       "version": "0.11.0-tiras4-branded-dualbank",
       "assetName": "twin-button-bootloader-0.11.0-tiras4-branded-dualbank.uf2",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.5/twin-button-bootloader-0.11.0-tiras4-branded-dualbank.uf2",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.6/twin-button-bootloader-0.11.0-tiras4-branded-dualbank.uf2",
       "sizeBytes": 72192,
       "sha256": "c3ede80efecb2397d7a4a71d1aa2787f1375f23fb5bb44fec38aa07058c5ffb9",
       "installation": "one-time-usb-uf2"
