@@ -1,33 +1,33 @@
 {
   "schema": 1,
-  "version": "2.3.12",
-  "tag": "v2.3.12",
-  "releaseName": "Smoke Tester 2.3.12",
-  "notes": "Removes cross-boot Twin Button DFU recovery from Smoke Tester: no pending update is read from NVS at startup, so normal boot and repeating error indication are no longer seized by a stale update. Twin discovery beside a phone link remains silent until an outdated Twin is confirmed. Once started, recovery exists only in RAM for the current powered session. If Twin finishes image activation but its bootloader does not reboot, Smoke waits for flash activation, sends the Nordic system-reset command over the existing link, reconnects to the Twin application, verifies version 1.1.28, and then ends the update indication. Twin Button 1.1.28 also bounds the post-DFU cue to 60 seconds and smoothly returns to blue BLE search if session configuration is missed. Includes the tiras5 dual-bank bootloader.",
-  "assetName": "firmware-2.3.12.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.12/firmware-2.3.12.bin",
-  "sizeBytes": 1445952,
-  "sha256": "278c8c1f13787fab4b2a77c70527ae2e1a4fa17ade2c2243b3c25942d21e2d7a",
+  "version": "2.3.14",
+  "tag": "v2.3.14",
+  "releaseName": "Smoke Tester 2.3.14",
+  "notes": "Fixes the Twin Button OTA regression introduced by the strict prepare-confirmation gate. Smoke now uses confirmed Twin firmware capability: Twin 1.1.29 and newer must report DFU_PREPARE_READY after the real LED lead-in, while legacy Twin applications retain the compatible buttonless-DFU entry and advance only after the actual ATT write/disconnect event. Smoke uses a bounded event-driven DFU state machine, controlled terminal error indication, smooth transition from the current RGB frame into the white update cue, persistent DFU diagnostics, and automatic BLE advertising/reconnect after Smoke OTA. The embedded Twin Button 1.1.30 adds persistent DFU/application/BLE diagnostics, immediate application advertising, session/version confirmation, bounded update indication, and guarded buttonless DFU. Includes the tiras6 verified-handoff bootloader with bank copy, CRC validation, settings commit, MCU reset, application handoff journal, and USB DFULOG.TXT; installing the bootloader remains a one-time USB UF2 operation.",
+  "assetName": "firmware-2.3.14.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.14/firmware-2.3.14.bin",
+  "sizeBytes": 1447376,
+  "sha256": "6a159ef68eb639d48fec050284daa4763635a4cb84d85e26b06498653af84c33",
   "twinButton": {
-    "version": "1.1.28",
+    "version": "1.1.30",
     "bin": {
-      "assetName": "twin-button-1.1.28.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.12/twin-button-1.1.28.bin",
-      "sizeBytes": 163612,
-      "sha256": "557aa9a6816a79bdbde0ab9018a9c3a79def66825ee8c0814836c8fa4ef1680f"
+      "assetName": "twin-button-1.1.30.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.14/twin-button-1.1.30.bin",
+      "sizeBytes": 164492,
+      "sha256": "799a46b0415947c0bafbefa2db8bcec061f7c329ffa7a30ca21ffdcd431e7008"
     },
     "dat": {
-      "assetName": "twin-button-1.1.28.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.12/twin-button-1.1.28.dat",
+      "assetName": "twin-button-1.1.30.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.14/twin-button-1.1.30.dat",
       "sizeBytes": 14,
-      "sha256": "1389200046ed2faedefe144d7666e91418a20adcb04fb228bb0eca2c1e83eba6"
+      "sha256": "ced1b086f238cc23340c005ba240f0fd9b256addd9b852ec10b3907bff52d5b7"
     },
     "bootloader": {
-      "version": "0.11.0-tiras5-branded-dualbank",
-      "assetName": "twin-button-bootloader-0.11.0-tiras5-branded-dualbank.uf2",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.12/twin-button-bootloader-0.11.0-tiras5-branded-dualbank.uf2",
-      "sizeBytes": 72192,
-      "sha256": "28f94f387c23790cd47212653130200df22abb5a5303efa0a12133bdbe71deb8",
+      "version": "0.11.0-tiras6-verified-handoff",
+      "assetName": "twin-button-bootloader-0.11.0-tiras6-verified-handoff.uf2",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.14/twin-button-bootloader-0.11.0-tiras6-verified-handoff.uf2",
+      "sizeBytes": 79872,
+      "sha256": "15411f67e3e90277b4609689f8c847aec689daa1cc060625ac7b59cc6d935bab",
       "installation": "one-time-usb-uf2"
     }
   }
