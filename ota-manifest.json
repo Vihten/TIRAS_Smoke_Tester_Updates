@@ -1,33 +1,33 @@
 {
   "schema": 1,
-  "version": "2.3.14",
-  "tag": "v2.3.14",
-  "releaseName": "Smoke Tester 2.3.14",
-  "notes": "Fixes the Twin Button OTA regression introduced by the strict prepare-confirmation gate. Smoke now uses confirmed Twin firmware capability: Twin 1.1.29 and newer must report DFU_PREPARE_READY after the real LED lead-in, while legacy Twin applications retain the compatible buttonless-DFU entry and advance only after the actual ATT write/disconnect event. Smoke uses a bounded event-driven DFU state machine, controlled terminal error indication, smooth transition from the current RGB frame into the white update cue, persistent DFU diagnostics, and automatic BLE advertising/reconnect after Smoke OTA. The embedded Twin Button 1.1.30 adds persistent DFU/application/BLE diagnostics, immediate application advertising, session/version confirmation, bounded update indication, and guarded buttonless DFU. Includes the tiras6 verified-handoff bootloader with bank copy, CRC validation, settings commit, MCU reset, application handoff journal, and USB DFULOG.TXT; installing the bootloader remains a one-time USB UF2 operation.",
-  "assetName": "firmware-2.3.14.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.14/firmware-2.3.14.bin",
-  "sizeBytes": 1447376,
-  "sha256": "6a159ef68eb639d48fec050284daa4763635a4cb84d85e26b06498653af84c33",
+  "version": "2.3.33",
+  "tag": "v2.3.33",
+  "releaseName": "Smoke Tester 2.3.33",
+  "notes": "Test build for the final Twin OTA acceptance pass. Smoke keeps the reset-safe, bounded DFU recovery state machine from 2.3.32 and embeds Twin Button 1.1.44. Twin now blends the actual application RGB frame to the white update ceiling, then holds that exact frame while the Nordic bootloader erases bank 1. Bootloader 0.11.0-tiras24-erase-hold starts white breathing only after the confirmed PSTORAGE_CLEAR completion event, eliminating the first three seconds of flash-erase micro-stutter without using a guessed delay. The bootloader remains a one-time USB UF2 installation.",
+  "assetName": "firmware-2.3.33.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.33/firmware-2.3.33.bin",
+  "sizeBytes": 1050960,
+  "sha256": "6ac16bc0f08b5d20c8084635bd8cdcfb39b793fa8c5f9f115e658bc219733c5e",
   "twinButton": {
-    "version": "1.1.30",
+    "version": "1.1.44",
     "bin": {
-      "assetName": "twin-button-1.1.30.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.14/twin-button-1.1.30.bin",
-      "sizeBytes": 164492,
-      "sha256": "799a46b0415947c0bafbefa2db8bcec061f7c329ffa7a30ca21ffdcd431e7008"
+      "assetName": "twin-button-1.1.44.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.33/twin-button-1.1.44.bin",
+      "sizeBytes": 161084,
+      "sha256": "d37c992b0629ca1ad5a1abab6c78603259894d94ab5c5bca6310447a4849ee16"
     },
     "dat": {
-      "assetName": "twin-button-1.1.30.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.14/twin-button-1.1.30.dat",
+      "assetName": "twin-button-1.1.44.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.33/twin-button-1.1.44.dat",
       "sizeBytes": 14,
-      "sha256": "ced1b086f238cc23340c005ba240f0fd9b256addd9b852ec10b3907bff52d5b7"
+      "sha256": "87e0f209ed4e88f831f1cba9d772705911bef0e30e000958cd27c2b109b777d9"
     },
     "bootloader": {
-      "version": "0.11.0-tiras6-verified-handoff",
-      "assetName": "twin-button-bootloader-0.11.0-tiras6-verified-handoff.uf2",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.14/twin-button-bootloader-0.11.0-tiras6-verified-handoff.uf2",
-      "sizeBytes": 79872,
-      "sha256": "15411f67e3e90277b4609689f8c847aec689daa1cc060625ac7b59cc6d935bab",
+      "version": "0.11.0-tiras24-erase-hold",
+      "assetName": "twin-button-bootloader-0.11.0-tiras24-erase-hold.uf2",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.33/twin-button-bootloader-0.11.0-tiras24-erase-hold.uf2",
+      "sizeBytes": 82432,
+      "sha256": "2b09bcb01e771a3e11150f1f18c170e505a768ad1e8ca8c0ece60e7bf1105fc4",
       "installation": "one-time-usb-uf2"
     }
   }

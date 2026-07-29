@@ -1,0 +1,4 @@
+7d9f1a4a40b5132f722428682d1d8b2394ad0a841e7cbeb2cb3c4c0faad0f761  firmware-2.3.32.bin
+bf01f37a28e9de8e00f2ead0a8c841f2ec74bb6b27cc5cb2433a71c21a1d80c3  twin-button-1.1.43.bin
+c4d9243f487af4e3928b417f3800b4c014610209fecbfd07040518eeff5d3c33  twin-button-1.1.43.dat
+0a95fdd8d433342d63643e6f2a07cba594ed6445dca66bc6230b90188d5def79  twin-button-bootloader-0.11.0-tiras23-linkloss-reset.uf2
