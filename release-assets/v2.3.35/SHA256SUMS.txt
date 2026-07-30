@@ -1,0 +1,4 @@
+f109bde2c1c741dad451250d71cb6e136afa490e46a99c5f1bea7f52ccb88dfc  firmware-2.3.35.bin
+53e5f7924742e4cda26f53f438ec29bcde996ef2cdb3e2207c9c5c020590906b  twin-button-1.1.46.bin
+73a081927aa56da80d510201b6fab61e7b44694f1a918e561725ab5e3c8101fc  twin-button-1.1.46.dat
+2b09bcb01e771a3e11150f1f18c170e505a768ad1e8ca8c0ece60e7bf1105fc4  twin-button-bootloader-0.11.0-tiras24-erase-hold.uf2
