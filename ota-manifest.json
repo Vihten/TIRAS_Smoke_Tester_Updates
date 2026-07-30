@@ -1,42 +1,42 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.63",
-    "name": "Smoke Tester 2.3.63 + Twin Button 1.1.48",
+    "tag": "v2.3.64",
+    "name": "Smoke Tester 2.3.64 + Twin Button 1.1.48",
     "components": [
       "smokeTester",
       "twinButton"
     ]
   },
-  "version": "2.3.63",
-  "tag": "v2.3.63",
-  "releaseName": "Smoke Tester 2.3.63 + Twin Button 1.1.48",
-  "notes": "Production-mode release. Smoke Tester developer mode is disabled, restoring normal charging and deep-sleep behavior. Automatic BLE return remains enabled only for a confirmed OTA reboot marker so the phone can reconnect after installation. Twin Button 1.1.48 remains embedded for the combined update path.",
-  "assetName": "firmware-2.3.63.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.63/firmware-2.3.63.bin",
+  "version": "2.3.64",
+  "tag": "v2.3.64",
+  "releaseName": "Smoke Tester 2.3.64 + Twin Button 1.1.48",
+  "notes": "Production-mode OTA speed validation release. Smoke Tester developer mode remains disabled. Use the Android release with the physically validated 241-byte Smoke payload to restore the approximately 26 KB/s transfer path even when Android reports MTU 255. Twin Button 1.1.48 remains embedded for the combined update path.",
+  "assetName": "firmware-2.3.64.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.64/firmware-2.3.64.bin",
   "sizeBytes": 1450704,
-  "sha256": "9a49c374115f6564b5d06b85ad66b91d5d213dcdd744808bbeb979d0d18f378e",
+  "sha256": "c67c8a74cda5d2ea6d58be137de0eee69aa794d5d6599676dd76452d281d3bd5",
   "smokeTester": {
-    "version": "2.3.63",
-    "tag": "v2.3.63",
-    "releaseName": "Smoke Tester 2.3.63 + Twin Button 1.1.48",
-    "assetName": "firmware-2.3.63.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.63/firmware-2.3.63.bin",
+    "version": "2.3.64",
+    "tag": "v2.3.64",
+    "releaseName": "Smoke Tester 2.3.64 + Twin Button 1.1.48",
+    "assetName": "firmware-2.3.64.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.64/firmware-2.3.64.bin",
     "sizeBytes": 1450704,
-    "sha256": "9a49c374115f6564b5d06b85ad66b91d5d213dcdd744808bbeb979d0d18f378e"
+    "sha256": "c67c8a74cda5d2ea6d58be137de0eee69aa794d5d6599676dd76452d281d3bd5"
   },
   "twinButton": {
     "version": "1.1.48",
-    "embeddedInSmokeVersion": "2.3.63",
+    "embeddedInSmokeVersion": "2.3.64",
     "bin": {
       "assetName": "twin-button-1.1.48.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.63/twin-button-1.1.48.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.64/twin-button-1.1.48.bin",
       "sizeBytes": 165840,
       "sha256": "8f53622faef3eca665b9b84239c1ac535be7804a667e8e5d05480fd20d8b3f51"
     },
     "dat": {
       "assetName": "twin-button-1.1.48.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.63/twin-button-1.1.48.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.64/twin-button-1.1.48.dat",
       "sizeBytes": 14,
       "sha256": "d735f04ee314e7063ee102c22b3af74374e4948de083f5dd722324a309c4a6dc"
     },
