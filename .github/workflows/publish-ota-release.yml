@@ -4,12 +4,6 @@ on:
   push:
     tags:
       - "v*"
-    branches:
-      - main
-    paths:
-      - ".github/workflows/publish-ota-release.yml"
-      - "ota-manifest.json"
-      - "release-assets/**"
 
 permissions:
   contents: write
@@ -32,43 +26,52 @@ jobs:
         run: |
           set -euo pipefail
 
-          if [[ "${GITHUB_REF_TYPE}" = "tag" ]]; then
-            release_tag="${GITHUB_REF_NAME}"
-          else
-            release_tag="$(jq -r '.tag' ota-manifest.json)"
-          fi
-
-          version="${release_tag#v}"
-          manifest_version="$(jq -r '.version' ota-manifest.json)"
-          manifest_tag="$(jq -r '.tag' ota-manifest.json)"
+          release_tag="${GITHUB_REF_NAME}"
+          manifest_release_tag="$(jq -r '.release.tag // .tag' ota-manifest.json)"
+          release_name="$(jq -r '.release.name // .releaseName' ota-manifest.json)"
           release_notes="$(jq -r '.notes' ota-manifest.json)"
-          twin_version="$(jq -r '.twinButton.version' ota-manifest.json)"
-          twin_bootloader="$(jq -r '.twinButton.bootloader.assetName' ota-manifest.json)"
           asset_dir="release-assets/${release_tag}"
-          smoke="${asset_dir}/firmware-${version}.bin"
-          twin_bin="${asset_dir}/twin-button-${twin_version}.bin"
-          twin_dat="${asset_dir}/twin-button-${twin_version}.dat"
-          twin_bootloader="${asset_dir}/${twin_bootloader}"
           checksums="${asset_dir}/SHA256SUMS.txt"
 
-          test "${manifest_version}" = "${version}"
-          test "${manifest_tag}" = "${release_tag}"
-          test -s "${smoke}"
-          test -s "${twin_bin}"
-          test -s "${twin_dat}"
-          test -s "${twin_bootloader}"
+          test "${manifest_release_tag}" = "${release_tag}"
           test -s "${checksums}"
+
+          mapfile -t components < <(
+            jq -r '.release.components[]?' ota-manifest.json
+          )
+          if [[ "${#components[@]}" -eq 0 ]]; then
+            components=(smokeTester twinButton twinBootloader)
+          fi
+
+          assets=("${checksums}")
+          for component in "${components[@]}"; do
+            case "${component}" in
+              smokeTester)
+                asset_name="$(jq -r '.smokeTester.assetName // .assetName' ota-manifest.json)"
+                ;;
+              twinButton)
+                twin_bin="$(jq -r '.twinButton.bin.assetName' ota-manifest.json)"
+                twin_dat="$(jq -r '.twinButton.dat.assetName' ota-manifest.json)"
+                test -s "${asset_dir}/${twin_bin}"
+                test -s "${asset_dir}/${twin_dat}"
+                assets+=("${asset_dir}/${twin_bin}" "${asset_dir}/${twin_dat}")
+                continue
+                ;;
+              twinBootloader)
+                asset_name="$(jq -r '.twinButton.bootloader.assetName' ota-manifest.json)"
+                ;;
+              *)
+                echo "Unknown release component: ${component}" >&2
+                exit 1
+                ;;
+            esac
+            test -s "${asset_dir}/${asset_name}"
+            assets+=("${asset_dir}/${asset_name}")
+          done
+
           (
             cd "${asset_dir}"
             sha256sum --check "SHA256SUMS.txt"
-          )
-
-          assets=(
-            "${smoke}"
-            "${twin_bin}"
-            "${twin_dat}"
-            "${twin_bootloader}"
-            "${checksums}"
           )
 
           if gh release view "${release_tag}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
@@ -78,13 +81,13 @@ jobs:
             gh release edit "${release_tag}" \
               --repo "${GITHUB_REPOSITORY}" \
               --latest \
-              --title "Smoke Tester ${version}" \
+              --title "${release_name}" \
               --notes "${release_notes}"
           else
             gh release create "${release_tag}" "${assets[@]}" \
               --repo "${GITHUB_REPOSITORY}" \
               --verify-tag \
               --latest \
-              --title "Smoke Tester ${version}" \
+              --title "${release_name}" \
               --notes "${release_notes}"
           fi

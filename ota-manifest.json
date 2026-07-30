@@ -1,26 +1,44 @@
 {
-  "schema": 1,
-  "version": "2.3.52",
-  "tag": "v2.3.52",
-  "releaseName": "Smoke Tester 2.3.52",
-  "notes": "Verified post-OTA reconnect candidate for Android GATT stale-callback rejection. The phone still waits for the newly booted Smoke SOTA marker, while the rebuilt GATT server now explicitly rejects an impossible CONNECTED callback received before its application service is ready. Includes Twin Button 1.1.47 and the unchanged one-time USB bootloader 0.11.0-tiras24-erase-hold.",
-  "assetName": "firmware-2.3.52.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.52/firmware-2.3.52.bin",
-  "sizeBytes": 1445856,
-  "sha256": "eb76a879234686cd9d1cf21686e5e65e8b7a9b792ea3102026bfc97eb0e09372",
+  "schema": 2,
+  "release": {
+    "tag": "v2.3.53",
+    "name": "Smoke Tester 2.3.53 + Twin Button 1.1.48",
+    "components": [
+      "smokeTester",
+      "twinButton"
+    ]
+  },
+  "version": "2.3.53",
+  "tag": "v2.3.53",
+  "releaseName": "Smoke Tester 2.3.53 + Twin Button 1.1.48",
+  "notes": "Fast combined test release. Smoke Tester 2.3.53 embeds Twin Button 1.1.48, so updating both uses one acknowledged Smoke OTA stream instead of a slower SPIFFS staging pass followed by Smoke OTA. The phone sends 16-packet windows to compatible Smoke firmware. The same manifest still publishes standalone Twin bin/dat assets for Twin-only recovery.",
+  "assetName": "firmware-2.3.53.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.53/firmware-2.3.53.bin",
+  "sizeBytes": 1446480,
+  "sha256": "88f1d0cf9e3bc1d54b4c732ea0cee2f1075e266eb0897850f3fafb8460303b3d",
+  "smokeTester": {
+    "version": "2.3.53",
+    "tag": "v2.3.53",
+    "releaseName": "Smoke Tester 2.3.53 + Twin Button 1.1.48",
+    "assetName": "firmware-2.3.53.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.53/firmware-2.3.53.bin",
+    "sizeBytes": 1446480,
+    "sha256": "88f1d0cf9e3bc1d54b4c732ea0cee2f1075e266eb0897850f3fafb8460303b3d"
+  },
   "twinButton": {
-    "version": "1.1.47",
+    "version": "1.1.48",
+    "embeddedInSmokeVersion": "2.3.53",
     "bin": {
-      "assetName": "twin-button-1.1.47.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.52/twin-button-1.1.47.bin",
+      "assetName": "twin-button-1.1.48.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.53/twin-button-1.1.48.bin",
       "sizeBytes": 165840,
-      "sha256": "446dceaf3122c61dd00415999a85e6270e2a54dc42d08f70a3ae10d5a3b64d1c"
+      "sha256": "8f53622faef3eca665b9b84239c1ac535be7804a667e8e5d05480fd20d8b3f51"
     },
     "dat": {
-      "assetName": "twin-button-1.1.47.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.52/twin-button-1.1.47.dat",
+      "assetName": "twin-button-1.1.48.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.53/twin-button-1.1.48.dat",
       "sizeBytes": 14,
-      "sha256": "64749ae662da53b4aacd6ebb48f930e560d02867c65b64ad2124e4eb5eed25de"
+      "sha256": "d735f04ee314e7063ee102c22b3af74374e4948de083f5dd722324a309c4a6dc"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
