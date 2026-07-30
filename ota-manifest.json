@@ -14,7 +14,7 @@
   "notes": "Paced native OTA validation release. Android drains sequential eight-packet native segments with a two-millisecond worker yield between segments, retaining one 32-packet protocol ACK without unsafe parallel notifications or long Dart polling gaps. Smoke logs compact SMOKE_OTA_RX_REJECT diagnostics with status, expected sequence, received sequence, and queue/window context if a packet is rejected. Twin Button 1.1.48 remains embedded for the combined update path.",
   "assetName": "firmware-2.3.62.bin",
   "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.62/firmware-2.3.62.bin",
-  "sizeBytes": 1065312,
+  "sizeBytes": 1065440,
   "sha256": "de3376d47abc1d2f994d88f92a06e806b7ba76920fddfa89f1f08cdd9837a458",
   "smokeTester": {
     "version": "2.3.62",
@@ -22,7 +22,7 @@
     "releaseName": "Smoke Tester 2.3.62 + Twin Button 1.1.48",
     "assetName": "firmware-2.3.62.bin",
     "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.62/firmware-2.3.62.bin",
-    "sizeBytes": 1065312,
+    "sizeBytes": 1065440,
     "sha256": "de3376d47abc1d2f994d88f92a06e806b7ba76920fddfa89f1f08cdd9837a458"
   },
   "twinButton": {
