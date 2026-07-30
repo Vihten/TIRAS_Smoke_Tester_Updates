@@ -58,7 +58,10 @@ jobs:
           test -s "${twin_dat}"
           test -s "${twin_bootloader}"
           test -s "${checksums}"
-          sha256sum --check "${checksums}"
+          (
+            cd "${asset_dir}"
+            sha256sum --check "SHA256SUMS.txt"
+          )
 
           assets=(
             "${smoke}"
