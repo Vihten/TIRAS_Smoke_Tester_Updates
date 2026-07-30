@@ -1,31 +1,31 @@
 {
   "schema": 1,
-  "version": "2.3.41",
-  "tag": "v2.3.41",
-  "releaseName": "Smoke Tester 2.3.41",
-  "notes": "Production build with stable smartphone diagnostics, confirmed Twin Button 1.1.47 handoff and synchronized generation indication. The Smoke Tester can now persistently clear its device error history through an acknowledged BLE request; the app removes entries only after NVS confirms the erase. Twin version reporting and post-update search return are retained across reconnects. Twin bootloader 0.11.0-tiras24-erase-hold is unchanged and remains a one-time USB UF2 installation.",
-  "assetName": "firmware-2.3.41.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.41/firmware-2.3.41.bin",
-  "sizeBytes": 1444224,
-  "sha256": "971cea08ca3d48cae469a647822cff2a2755b54827cedad60d225ebdd4dd7277",
+  "version": "2.3.42",
+  "tag": "v2.3.42",
+  "releaseName": "Smoke Tester 2.3.42",
+  "notes": "Production build that keeps BLE advertising and USB CDC active after an OTA reboot even while USB power is connected. The confirmed OTA continuation now bypasses the normal charge/wake sleep path, allowing the phone to reconnect automatically and verify the installed version. Includes persistent, acknowledged controller error-history clearing and Twin Button 1.1.47 with synchronized generation indication. Twin bootloader 0.11.0-tiras24-erase-hold is unchanged and remains a one-time USB UF2 installation.",
+  "assetName": "firmware-2.3.42.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.42/firmware-2.3.42.bin",
+  "sizeBytes": 1444304,
+  "sha256": "c4b3db82bc2dc2a043b5f98e12998230c3e93b571d18840d1b03b4cdb39434a0",
   "twinButton": {
     "version": "1.1.47",
     "bin": {
       "assetName": "twin-button-1.1.47.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.41/twin-button-1.1.47.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.42/twin-button-1.1.47.bin",
       "sizeBytes": 165840,
       "sha256": "446dceaf3122c61dd00415999a85e6270e2a54dc42d08f70a3ae10d5a3b64d1c"
     },
     "dat": {
       "assetName": "twin-button-1.1.47.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.41/twin-button-1.1.47.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.42/twin-button-1.1.47.dat",
       "sizeBytes": 14,
       "sha256": "64749ae662da53b4aacd6ebb48f930e560d02867c65b64ad2124e4eb5eed25de"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
       "assetName": "twin-button-bootloader-0.11.0-tiras24-erase-hold.uf2",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.41/twin-button-bootloader-0.11.0-tiras24-erase-hold.uf2",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.42/twin-button-bootloader-0.11.0-tiras24-erase-hold.uf2",
       "sizeBytes": 82432,
       "sha256": "2b09bcb01e771a3e11150f1f18c170e505a768ad1e8ca8c0ece60e7bf1105fc4",
       "installation": "one-time-usb-uf2"
