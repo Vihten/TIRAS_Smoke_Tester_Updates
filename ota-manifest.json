@@ -1,42 +1,42 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.60",
-    "name": "Smoke Tester 2.3.60 + Twin Button 1.1.48",
+    "tag": "v2.3.61",
+    "name": "Smoke Tester 2.3.61 + Twin Button 1.1.48",
     "components": [
       "smokeTester",
       "twinButton"
     ]
   },
-  "version": "2.3.60",
-  "tag": "v2.3.60",
-  "releaseName": "Smoke Tester 2.3.60 + Twin Button 1.1.48",
-  "notes": "Pipelined OTA throughput and recovery release. Smoke 2.3.60 negotiates a 7.5 ms phone connection interval, accepts 128 firmware packets per protocol ACK, updates LED progress after every 4096-byte flash commit, aborts invalid or overrun packet windows back to Idle, and terminates a half-open post-update Android GATT handshake after 5 seconds instead of entering a watchdog reboot loop. The application pipelines the proven Fire Tester depth of eight native Android notifications per burst, avoiding the status 129 seen at depth sixteen while retaining one confirmed Smoke ACK per 128 packets. Twin Button 1.1.48 remains embedded for the combined update path.",
-  "assetName": "firmware-2.3.60.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.60/firmware-2.3.60.bin",
+  "version": "2.3.61",
+  "tag": "v2.3.61",
+  "releaseName": "Smoke Tester 2.3.61 + Twin Button 1.1.48",
+  "notes": "Native callback-paced OTA transport validation release. The Android application gives each 32-packet Smoke window to one native queue; only one notification is in flight, and the next starts directly from onNotificationSent. This removes the former 12 ms Dart polling gap per packet without using the unsafe parallel notification bursts that caused Android status 129. Smoke Tester retains the verified 2.3.60 activation, reset, BLE resume, 7.5 ms connection interval, bounded GATT handshake, and flash-progress behavior. Twin Button 1.1.48 remains embedded for the combined update path.",
+  "assetName": "firmware-2.3.61.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.61/firmware-2.3.61.bin",
   "sizeBytes": 1065312,
-  "sha256": "804de155bbb66b9f6f5e5b27197620cc9e1ddad68b749667684e925289bc8343",
+  "sha256": "c3298abf87a27d37dfd35d62f8bc440cae96b8f9463dbce44224147d2457f11d",
   "smokeTester": {
-    "version": "2.3.60",
-    "tag": "v2.3.60",
-    "releaseName": "Smoke Tester 2.3.60 + Twin Button 1.1.48",
-    "assetName": "firmware-2.3.60.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.60/firmware-2.3.60.bin",
+    "version": "2.3.61",
+    "tag": "v2.3.61",
+    "releaseName": "Smoke Tester 2.3.61 + Twin Button 1.1.48",
+    "assetName": "firmware-2.3.61.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.61/firmware-2.3.61.bin",
     "sizeBytes": 1065312,
-    "sha256": "804de155bbb66b9f6f5e5b27197620cc9e1ddad68b749667684e925289bc8343"
+    "sha256": "c3298abf87a27d37dfd35d62f8bc440cae96b8f9463dbce44224147d2457f11d"
   },
   "twinButton": {
     "version": "1.1.48",
-    "embeddedInSmokeVersion": "2.3.60",
+    "embeddedInSmokeVersion": "2.3.61",
     "bin": {
       "assetName": "twin-button-1.1.48.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.60/twin-button-1.1.48.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.61/twin-button-1.1.48.bin",
       "sizeBytes": 165840,
       "sha256": "8f53622faef3eca665b9b84239c1ac535be7804a667e8e5d05480fd20d8b3f51"
     },
     "dat": {
       "assetName": "twin-button-1.1.48.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.60/twin-button-1.1.48.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.61/twin-button-1.1.48.dat",
       "sizeBytes": 14,
       "sha256": "d735f04ee314e7063ee102c22b3af74374e4948de083f5dd722324a309c4a6dc"
     },
