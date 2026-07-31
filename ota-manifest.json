@@ -1,44 +1,50 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.78",
-    "name": "Smoke Tester 2.3.78 + Twin Button 1.1.48",
+    "tag": "v2.3.79",
+    "name": "Smoke Tester 2.3.79 + Twin Button 1.1.49",
     "components": [
       "smokeTester",
       "twinButton"
     ]
   },
-  "version": "2.3.78",
-  "tag": "v2.3.78",
-  "releaseName": "Smoke Tester 2.3.78 + Twin Button 1.1.48",
-  "notes": "Second consecutive physical validation release for the bounded 64-packet Smoke OTA window and two-notification Android transport batch. It retains the proven 241-byte payload, post-flash ACK semantics, automatic BLE recovery, and Twin Button 1.1.48 combined artifacts.",
-  "assetName": "firmware-2.3.78.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.78/firmware-2.3.78.bin",
-  "sizeBytes": 1451136,
-  "sha256": "edf4390fe95e44464b3c76de69d557bff379eee82c1f98be1ef49a4d5416f5d3",
+  "version": "2.3.79",
+  "tag": "v2.3.79",
+  "releaseName": "Smoke Tester 2.3.79 + Twin Button 1.1.49",
+  "notes": "Smoke-only OTA now downloads a smaller application image, while combined updates use a separate reset-safe Smoke plus Twin image. Twin Button 1.1.49 retries its post-session firmware-version notification until BLE accepts it, so Smoke can close DFU only on confirmed application handoff. The three-write Android transport burst requires physical validation and automatically retains protocol-level ACK verification.",
+  "assetName": "firmware-2.3.79.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/firmware-2.3.79.bin",
+  "sizeBytes": 1284832,
+  "sha256": "444bd113c00821a618ef595afd68ecb2b2e3850e4799cd322416e273a0fb9ea7",
   "smokeTester": {
-    "version": "2.3.78",
-    "tag": "v2.3.78",
-    "releaseName": "Smoke Tester 2.3.78 + Twin Button 1.1.48",
-    "assetName": "firmware-2.3.78.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.78/firmware-2.3.78.bin",
-    "sizeBytes": 1451136,
-    "sha256": "edf4390fe95e44464b3c76de69d557bff379eee82c1f98be1ef49a4d5416f5d3"
+    "version": "2.3.79",
+    "tag": "v2.3.79",
+    "releaseName": "Smoke Tester 2.3.79 + Twin Button 1.1.49",
+    "assetName": "firmware-2.3.79.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/firmware-2.3.79.bin",
+    "sizeBytes": 1284832,
+    "sha256": "444bd113c00821a618ef595afd68ecb2b2e3850e4799cd322416e273a0fb9ea7"
   },
   "twinButton": {
-    "version": "1.1.48",
-    "embeddedInSmokeVersion": "2.3.78",
+    "version": "1.1.49",
+    "embeddedInSmokeVersion": "2.3.79",
     "bin": {
-      "assetName": "twin-button-1.1.48.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.78/twin-button-1.1.48.bin",
-      "sizeBytes": 165840,
-      "sha256": "8f53622faef3eca665b9b84239c1ac535be7804a667e8e5d05480fd20d8b3f51"
+      "assetName": "twin-button-1.1.49.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/twin-button-1.1.49.bin",
+      "sizeBytes": 166036,
+      "sha256": "c2710b73b5862a8c92e4a9c4ec3c9bd0201de4d25a69e48f47642036d456ac9a"
     },
     "dat": {
-      "assetName": "twin-button-1.1.48.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.78/twin-button-1.1.48.dat",
+      "assetName": "twin-button-1.1.49.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/twin-button-1.1.49.dat",
       "sizeBytes": 14,
-      "sha256": "d735f04ee314e7063ee102c22b3af74374e4948de083f5dd722324a309c4a6dc"
+      "sha256": "b0025664e9aa8b3378231737765d64fa613265f2e3f362cac18be1883b913553"
+    },
+    "combinedSmokeBin": {
+      "assetName": "combined-smoke-2.3.79-twin-1.1.49.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/combined-smoke-2.3.79-twin-1.1.49.bin",
+      "sizeBytes": 1451536,
+      "sha256": "e25abc717e28b7aa80b9c1c0f8e2669650b7e500b1e3baf8277065310a496fd1"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
