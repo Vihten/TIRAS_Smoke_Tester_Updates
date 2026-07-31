@@ -1,42 +1,42 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.66",
-    "name": "Smoke Tester 2.3.66 + Twin Button 1.1.48",
+    "tag": "v2.3.67",
+    "name": "Smoke Tester 2.3.67 + Twin Button 1.1.48",
     "components": [
       "smokeTester",
       "twinButton"
     ]
   },
-  "version": "2.3.66",
-  "tag": "v2.3.66",
-  "releaseName": "Smoke Tester 2.3.66 + Twin Button 1.1.48",
-  "notes": "Production release with faster and more reliable phone OTA. Smoke Tester now gives the active OTA connection exclusive radio time by pausing background scan and advertising, then restores discovery after abort or completion. The recovered-error animation retains ownership of both LED strips until the normal frame is actually rendered, preventing a stale battery-panel error code. Eight-minute inactivity sleep and developer-mode-off behavior remain enabled. Twin Button 1.1.48 remains embedded for the combined update path.",
-  "assetName": "firmware-2.3.66.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.66/firmware-2.3.66.bin",
+  "version": "2.3.67",
+  "tag": "v2.3.67",
+  "releaseName": "Smoke Tester 2.3.67 + Twin Button 1.1.48",
+  "notes": "Production validation release retaining the reliable phone OTA, error-indicator recovery, eight-minute inactivity sleep, watchdog, and developer-mode-off behavior from 2.3.66. The version bump provides a clean cloud OTA target for the final measured 32-packet fast-transfer validation. Twin Button 1.1.48 remains embedded for the combined update path.",
+  "assetName": "firmware-2.3.67.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.67/firmware-2.3.67.bin",
   "sizeBytes": 1451136,
-  "sha256": "89d8be474cf0c2cecc924bded964382f3bbe43a21e477c620daac85edb4f18fc",
+  "sha256": "c9f293f939042bdc3e3378f4a093e41010377dde761714366d3eeae54bd4a215",
   "smokeTester": {
-    "version": "2.3.66",
-    "tag": "v2.3.66",
-    "releaseName": "Smoke Tester 2.3.66 + Twin Button 1.1.48",
-    "assetName": "firmware-2.3.66.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.66/firmware-2.3.66.bin",
+    "version": "2.3.67",
+    "tag": "v2.3.67",
+    "releaseName": "Smoke Tester 2.3.67 + Twin Button 1.1.48",
+    "assetName": "firmware-2.3.67.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.67/firmware-2.3.67.bin",
     "sizeBytes": 1451136,
-    "sha256": "89d8be474cf0c2cecc924bded964382f3bbe43a21e477c620daac85edb4f18fc"
+    "sha256": "c9f293f939042bdc3e3378f4a093e41010377dde761714366d3eeae54bd4a215"
   },
   "twinButton": {
     "version": "1.1.48",
-    "embeddedInSmokeVersion": "2.3.66",
+    "embeddedInSmokeVersion": "2.3.67",
     "bin": {
       "assetName": "twin-button-1.1.48.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.66/twin-button-1.1.48.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.67/twin-button-1.1.48.bin",
       "sizeBytes": 165840,
       "sha256": "8f53622faef3eca665b9b84239c1ac535be7804a667e8e5d05480fd20d8b3f51"
     },
     "dat": {
       "assetName": "twin-button-1.1.48.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.66/twin-button-1.1.48.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.67/twin-button-1.1.48.dat",
       "sizeBytes": 14,
       "sha256": "d735f04ee314e7063ee102c22b3af74374e4948de083f5dd722324a309c4a6dc"
     },
