@@ -1,29 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.80",
-    "name": "Smoke Tester 2.3.80 + Twin Button 1.1.50",
+    "tag": "v2.3.81",
+    "name": "Smoke Tester 2.3.81",
     "components": [
-      "smokeTester",
-      "twinButton"
+      "smokeTester"
     ]
   },
-  "version": "2.3.80",
-  "tag": "v2.3.80",
-  "releaseName": "Smoke Tester 2.3.80 + Twin Button 1.1.50",
-  "notes": "Test release of Smoke Tester 2.3.80 and Twin Button 1.1.50. The Smoke-only OTA uses the smaller application image; combined installation uses the paired Smoke image with the Twin 1.1.50 DFU package embedded.",
-  "assetName": "firmware-2.3.80.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.80/firmware-2.3.80.bin",
-  "sizeBytes": 1284832,
-  "sha256": "b07d2d3c8d206ba76ce8f700c03eb5b5b2a6545ad2f16eaa5d1fe75df6875b29",
+  "version": "2.3.81",
+  "tag": "v2.3.81",
+  "releaseName": "Smoke Tester 2.3.81",
+  "notes": "Smoke-only OTA. Serializes the Smoke central BLE slot with phone priority and re-arms the post-Twin-DFU scan so the updated Twin can reconnect without a sleep/wake cycle. Twin Button remains 1.1.50.",
+  "assetName": "firmware-2.3.81.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.81/firmware-2.3.81.bin",
+  "sizeBytes": 1284608,
+  "sha256": "943c089a23f01330a3d32cb20ec71a7a7b87162b75c43c7c471304459ced007e",
   "smokeTester": {
-    "version": "2.3.80",
-    "tag": "v2.3.80",
-    "releaseName": "Smoke Tester 2.3.80 + Twin Button 1.1.50",
-    "assetName": "firmware-2.3.80.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.80/firmware-2.3.80.bin",
-    "sizeBytes": 1284832,
-    "sha256": "b07d2d3c8d206ba76ce8f700c03eb5b5b2a6545ad2f16eaa5d1fe75df6875b29"
+    "version": "2.3.81",
+    "tag": "v2.3.81",
+    "releaseName": "Smoke Tester 2.3.81",
+    "assetName": "firmware-2.3.81.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.81/firmware-2.3.81.bin",
+    "sizeBytes": 1284608,
+    "sha256": "943c089a23f01330a3d32cb20ec71a7a7b87162b75c43c7c471304459ced007e"
   },
   "twinButton": {
     "version": "1.1.50",
