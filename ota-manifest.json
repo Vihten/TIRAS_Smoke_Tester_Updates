@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.85",
-    "name": "Smoke Tester 2.3.85",
+    "tag": "v2.3.86",
+    "name": "Smoke Tester 2.3.86",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.85",
-  "tag": "v2.3.85",
-  "releaseName": "Smoke Tester 2.3.85",
-  "notes": "Smoke-only OTA. Manual power-off no longer sends a BLE peer power-event. An RTC manual-off fence now forces button-only deep sleep after any unexpected BLE, OTA, watchdog, or reset path; it clears only after a fresh held Wake-button boot. Twin Button remains 1.1.51.",
-  "assetName": "firmware-2.3.85.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.85/firmware-2.3.85.bin",
-  "sizeBytes": 1285568,
-  "sha256": "c4712eed903e521b03feac7e383fad72638800372e4de7bb7d8f700e37e41f3d",
+  "version": "2.3.86",
+  "tag": "v2.3.86",
+  "releaseName": "Smoke Tester 2.3.86",
+  "notes": "Smoke-only OTA. The manual-off intent is now committed to RTC and NVS before any live BLE teardown. Deep sleep no longer deinitializes NimBLE on a live ACL, unexpected reset paths return directly to button-only sleep, and stale post-OTA reconnect markers are cleared on power-off. Twin Button remains 1.1.51.",
+  "assetName": "firmware-2.3.86.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.86/firmware-2.3.86.bin",
+  "sizeBytes": 1286896,
+  "sha256": "0066283fbb8da1c9e827ac331f631cfdfa5e4be32be1aa3004b2ccfd266fd67b",
   "smokeTester": {
-    "version": "2.3.85",
-    "tag": "v2.3.85",
-    "releaseName": "Smoke Tester 2.3.85",
-    "assetName": "firmware-2.3.85.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.85/firmware-2.3.85.bin",
-    "sizeBytes": 1285568,
-    "sha256": "c4712eed903e521b03feac7e383fad72638800372e4de7bb7d8f700e37e41f3d"
+    "version": "2.3.86",
+    "tag": "v2.3.86",
+    "releaseName": "Smoke Tester 2.3.86",
+    "assetName": "firmware-2.3.86.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.86/firmware-2.3.86.bin",
+    "sizeBytes": 1286896,
+    "sha256": "0066283fbb8da1c9e827ac331f631cfdfa5e4be32be1aa3004b2ccfd266fd67b"
   },
   "twinButton": {
     "version": "1.1.51",
