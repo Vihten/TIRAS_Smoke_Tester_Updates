@@ -52,9 +52,14 @@ jobs:
               twinButton)
                 twin_bin="$(jq -r '.twinButton.bin.assetName' ota-manifest.json)"
                 twin_dat="$(jq -r '.twinButton.dat.assetName' ota-manifest.json)"
+                twin_combined="$(jq -r '.twinButton.combinedSmokeBin.assetName // empty' ota-manifest.json)"
                 test -s "${asset_dir}/${twin_bin}"
                 test -s "${asset_dir}/${twin_dat}"
                 assets+=("${asset_dir}/${twin_bin}" "${asset_dir}/${twin_dat}")
+                if [[ -n "${twin_combined}" ]]; then
+                  test -s "${asset_dir}/${twin_combined}"
+                  assets+=("${asset_dir}/${twin_combined}")
+                fi
                 continue
                 ;;
               twinBootloader)

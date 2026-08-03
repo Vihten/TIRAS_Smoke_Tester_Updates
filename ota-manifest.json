@@ -1,50 +1,50 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.79",
-    "name": "Smoke Tester 2.3.79 + Twin Button 1.1.49",
+    "tag": "v2.3.80",
+    "name": "Smoke Tester 2.3.80 + Twin Button 1.1.50",
     "components": [
       "smokeTester",
       "twinButton"
     ]
   },
-  "version": "2.3.79",
-  "tag": "v2.3.79",
-  "releaseName": "Smoke Tester 2.3.79 + Twin Button 1.1.49",
-  "notes": "Smoke-only OTA now downloads a smaller application image, while combined updates use a separate reset-safe Smoke plus Twin image. Twin Button 1.1.49 retries its post-session firmware-version notification until BLE accepts it, so Smoke can close DFU only on confirmed application handoff. The three-write Android transport burst requires physical validation and automatically retains protocol-level ACK verification.",
-  "assetName": "firmware-2.3.79.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/firmware-2.3.79.bin",
+  "version": "2.3.80",
+  "tag": "v2.3.80",
+  "releaseName": "Smoke Tester 2.3.80 + Twin Button 1.1.50",
+  "notes": "Test release of Smoke Tester 2.3.80 and Twin Button 1.1.50. The Smoke-only OTA uses the smaller application image; combined installation uses the paired Smoke image with the Twin 1.1.50 DFU package embedded.",
+  "assetName": "firmware-2.3.80.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.80/firmware-2.3.80.bin",
   "sizeBytes": 1284832,
-  "sha256": "444bd113c00821a618ef595afd68ecb2b2e3850e4799cd322416e273a0fb9ea7",
+  "sha256": "b07d2d3c8d206ba76ce8f700c03eb5b5b2a6545ad2f16eaa5d1fe75df6875b29",
   "smokeTester": {
-    "version": "2.3.79",
-    "tag": "v2.3.79",
-    "releaseName": "Smoke Tester 2.3.79 + Twin Button 1.1.49",
-    "assetName": "firmware-2.3.79.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/firmware-2.3.79.bin",
+    "version": "2.3.80",
+    "tag": "v2.3.80",
+    "releaseName": "Smoke Tester 2.3.80 + Twin Button 1.1.50",
+    "assetName": "firmware-2.3.80.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.80/firmware-2.3.80.bin",
     "sizeBytes": 1284832,
-    "sha256": "444bd113c00821a618ef595afd68ecb2b2e3850e4799cd322416e273a0fb9ea7"
+    "sha256": "b07d2d3c8d206ba76ce8f700c03eb5b5b2a6545ad2f16eaa5d1fe75df6875b29"
   },
   "twinButton": {
-    "version": "1.1.49",
-    "embeddedInSmokeVersion": "2.3.79",
+    "version": "1.1.50",
+    "embeddedInSmokeVersion": "2.3.80",
     "bin": {
-      "assetName": "twin-button-1.1.49.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/twin-button-1.1.49.bin",
+      "assetName": "twin-button-1.1.50.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.80/twin-button-1.1.50.bin",
       "sizeBytes": 166036,
-      "sha256": "c2710b73b5862a8c92e4a9c4ec3c9bd0201de4d25a69e48f47642036d456ac9a"
+      "sha256": "c40f3369711901b2a08b84366a32451c4b6c77e534f5df149a8470666c02ecca"
     },
     "dat": {
-      "assetName": "twin-button-1.1.49.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/twin-button-1.1.49.dat",
+      "assetName": "twin-button-1.1.50.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.80/twin-button-1.1.50.dat",
       "sizeBytes": 14,
-      "sha256": "b0025664e9aa8b3378231737765d64fa613265f2e3f362cac18be1883b913553"
+      "sha256": "a292f06beae3f36119878df78823dd49ddf26ea3d91a266c517f56d42b378d9e"
     },
     "combinedSmokeBin": {
-      "assetName": "combined-smoke-2.3.79-twin-1.1.49.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.79/combined-smoke-2.3.79-twin-1.1.49.bin",
+      "assetName": "combined-smoke-2.3.80-twin-1.1.50.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.80/combined-smoke-2.3.80-twin-1.1.50.bin",
       "sizeBytes": 1451536,
-      "sha256": "e25abc717e28b7aa80b9c1c0f8e2669650b7e500b1e3baf8277065310a496fd1"
+      "sha256": "007192497f5e8cda5ad84765a8763d03ad0a01da5925c2185abef0650fe8aac9"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
