@@ -1,29 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.82",
-    "name": "Smoke Tester 2.3.82 + Twin Button 1.1.51",
+    "tag": "v2.3.83",
+    "name": "Smoke Tester 2.3.83",
     "components": [
-      "smokeTester",
-      "twinButton"
+      "smokeTester"
     ]
   },
-  "version": "2.3.82",
-  "tag": "v2.3.82",
-  "releaseName": "Smoke Tester 2.3.82 + Twin Button 1.1.51",
-  "notes": "Paired OTA test release. Smoke uses one central BLE slot with phone priority and re-arms scanning after Twin ACTIVATE_AND_RESET; Twin 1.1.51 is included to verify automatic application advertising, session config, and version confirmation without sleep/wake.",
-  "assetName": "firmware-2.3.82.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.82/firmware-2.3.82.bin",
-  "sizeBytes": 1284608,
-  "sha256": "0df4104d84a8c69ace2d19a4335ba2851acf50c0f2fc9c33c3e439ddf75508f3",
+  "version": "2.3.83",
+  "tag": "v2.3.83",
+  "releaseName": "Smoke Tester 2.3.83",
+  "notes": "Smoke-only OTA. Manual power-off now uses button-only deep-sleep wake, clears the charger wake source, holds the released wake button low, and records the GPIO wake mask at next boot. Twin Button remains 1.1.51.",
+  "assetName": "firmware-2.3.83.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.83/firmware-2.3.83.bin",
+  "sizeBytes": 1285104,
+  "sha256": "6ee56a664a7c10910d06a173201106aa35c8bee267ace8a88a1378038614d431",
   "smokeTester": {
-    "version": "2.3.82",
-    "tag": "v2.3.82",
-    "releaseName": "Smoke Tester 2.3.82 + Twin Button 1.1.51",
-    "assetName": "firmware-2.3.82.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.82/firmware-2.3.82.bin",
-    "sizeBytes": 1284608,
-    "sha256": "0df4104d84a8c69ace2d19a4335ba2851acf50c0f2fc9c33c3e439ddf75508f3"
+    "version": "2.3.83",
+    "tag": "v2.3.83",
+    "releaseName": "Smoke Tester 2.3.83",
+    "assetName": "firmware-2.3.83.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.83/firmware-2.3.83.bin",
+    "sizeBytes": 1285104,
+    "sha256": "6ee56a664a7c10910d06a173201106aa35c8bee267ace8a88a1378038614d431"
   },
   "twinButton": {
     "version": "1.1.51",
