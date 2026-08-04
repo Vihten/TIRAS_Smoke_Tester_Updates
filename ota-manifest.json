@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.87",
-    "name": "Smoke Tester 2.3.87",
+    "tag": "v2.3.88",
+    "name": "Smoke Tester 2.3.88",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.87",
-  "tag": "v2.3.87",
-  "releaseName": "Smoke Tester 2.3.87",
-  "notes": "Smoke-only OTA. Smoke Tester now streams the exact RGB frame physically latched on both main indicator pixels, including frame sequence and reference brightness. The app can mirror the device LED without inferring a color or running a separate animation. Indicator telemetry is suppressed while OTA or Twin DFU owns the transport. Twin Button remains 1.1.51.",
-  "assetName": "firmware-2.3.87.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.87/firmware-2.3.87.bin",
-  "sizeBytes": 1287232,
-  "sha256": "54f13669d4592e2926b2a74b2756480ee7f4639413ccf05b977f3400b28ce1fc",
+  "version": "2.3.88",
+  "tag": "v2.3.88",
+  "releaseName": "Smoke Tester 2.3.88",
+  "notes": "Smoke-only OTA. Main-indicator telemetry now uses sparse 80 ms checkpoints with the device latch timestamp instead of forwarding every animation frame. Physical 8-bit PWM brightness is preserved, so the normal 0/80/40 emerald is no longer normalized into full-bright green. The app can interpolate short, interruptible segments without BLE packet jitter. Twin Button remains 1.1.51.",
+  "assetName": "firmware-2.3.88.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.88/firmware-2.3.88.bin",
+  "sizeBytes": 1287200,
+  "sha256": "b6f977f6c993d4a83c9dfdd7cba1a1570539f5dda422c4dc5f559e088c0ac2f5",
   "smokeTester": {
-    "version": "2.3.87",
-    "tag": "v2.3.87",
-    "releaseName": "Smoke Tester 2.3.87",
-    "assetName": "firmware-2.3.87.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.87/firmware-2.3.87.bin",
-    "sizeBytes": 1287232,
-    "sha256": "54f13669d4592e2926b2a74b2756480ee7f4639413ccf05b977f3400b28ce1fc"
+    "version": "2.3.88",
+    "tag": "v2.3.88",
+    "releaseName": "Smoke Tester 2.3.88",
+    "assetName": "firmware-2.3.88.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.88/firmware-2.3.88.bin",
+    "sizeBytes": 1287200,
+    "sha256": "b6f977f6c993d4a83c9dfdd7cba1a1570539f5dda422c4dc5f559e088c0ac2f5"
   },
   "twinButton": {
     "version": "1.1.51",
