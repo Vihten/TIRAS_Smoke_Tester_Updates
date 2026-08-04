@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.92",
-    "name": "Smoke Tester 2.3.92",
+    "tag": "v2.3.93",
+    "name": "Smoke Tester 2.3.93",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.92",
-  "tag": "v2.3.92",
-  "releaseName": "Smoke Tester 2.3.92",
-  "notes": "Smoke-only OTA. Error reminders are announced before their LED phase begins and use a scheduled protocol-v3 start point shared with the Android renderer. The BLE diagnostics worker is awakened immediately, eliminating the former device-first flash. Protocol v2 remains supported by the updated app. Twin Button remains 1.1.51.",
-  "assetName": "firmware-2.3.92.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.92/firmware-2.3.92.bin",
-  "sizeBytes": 1288608,
-  "sha256": "7f526c180603211102f3d2699871130592f6ca1df1cee6aa12b7eae9a85d4947",
+  "version": "2.3.93",
+  "tag": "v2.3.93",
+  "releaseName": "Smoke Tester 2.3.93",
+  "notes": "Smoke-only OTA. At OTA start and during transfer, Smoke re-evaluates the current phone-link RSSI and switches between 1M and 2M PHY with hysteresis instead of keeping the PHY selected at the initial connection. The Android app separately removes the 55 ms UI coalescing delay for timestamped indicator effects. Twin Button remains 1.1.51.",
+  "assetName": "firmware-2.3.93.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.93/firmware-2.3.93.bin",
+  "sizeBytes": 1289056,
+  "sha256": "a916ca05f106318b987e99dc8c997875550caaf0d7724d3ea75cd2d523ce6b3c",
   "smokeTester": {
-    "version": "2.3.92",
-    "tag": "v2.3.92",
-    "releaseName": "Smoke Tester 2.3.92",
-    "assetName": "firmware-2.3.92.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.92/firmware-2.3.92.bin",
-    "sizeBytes": 1288608,
-    "sha256": "7f526c180603211102f3d2699871130592f6ca1df1cee6aa12b7eae9a85d4947"
+    "version": "2.3.93",
+    "tag": "v2.3.93",
+    "releaseName": "Smoke Tester 2.3.93",
+    "assetName": "firmware-2.3.93.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.93/firmware-2.3.93.bin",
+    "sizeBytes": 1289056,
+    "sha256": "a916ca05f106318b987e99dc8c997875550caaf0d7724d3ea75cd2d523ce6b3c"
   },
   "twinButton": {
     "version": "1.1.51",
