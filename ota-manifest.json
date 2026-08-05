@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.113",
-    "name": "Smoke Tester 2.3.113",
+    "tag": "v2.3.114",
+    "name": "Smoke Tester 2.3.114",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.113",
-  "tag": "v2.3.113",
-  "releaseName": "Smoke Tester 2.3.113",
-  "notes": "Smoke-only startup and manual-density correction. Startup confirmation is now measured from the beginning of setup and reduced from 120 ms to a debounce-sized 40 ms, so peripheral and NVS initialization no longer extend the physical Wake hold. The two-button density gesture owns Wake from the first overlap, active interaction blocks inactivity sleep, and the idle timer is refreshed across the mode session, preventing an early Wake edge or expired idle timer from putting the tester to sleep while entering the menu. Restores the established simultaneous crossfade from the previous density LED to the next using one atomic exclusive two-pixel frame; every unrelated segment remains forced off so battery and BLE writers cannot overlap it. Includes the charging, direct selected-density Start, false cartridge-fault, smooth error animation and shutdown fixes from 2.3.112. Twin Button firmware content remains unchanged.",
-  "assetName": "firmware-2.3.113.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.113/firmware-2.3.113.bin",
+  "version": "2.3.114",
+  "tag": "v2.3.114",
+  "releaseName": "Smoke Tester 2.3.114",
+  "notes": "Smoke-only battery-preview wake classification correction. Fixes the 2.3.113 regression where setup time could complete the shortened startup timer while an ordinary charge-level tap was still electrically HIGH, causing an unintended full power-on. The battery level is still shown immediately, but the startup timer now begins only after that frame is visible and requires Wake to remain continuously asserted for a separate 100 ms confirmation window; any release keeps the interaction as a battery preview and returns the tester to sleep. Includes the protected two-button manual-density entry and exclusive two-LED crossfade from 2.3.113. Twin Button firmware content remains unchanged.",
+  "assetName": "firmware-2.3.114.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.114/firmware-2.3.114.bin",
   "sizeBytes": 1292944,
-  "sha256": "6ab3dcddd15541df73b0b0d2bdebc62c90688e440a1a36e6316ac607ee43cdf5",
+  "sha256": "53a6f9cdd24f102993de993c2123b25a1e6f4431c85c6a10e765f23469c92dd6",
   "smokeTester": {
-    "version": "2.3.113",
-    "tag": "v2.3.113",
-    "releaseName": "Smoke Tester 2.3.113",
-    "assetName": "firmware-2.3.113.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.113/firmware-2.3.113.bin",
+    "version": "2.3.114",
+    "tag": "v2.3.114",
+    "releaseName": "Smoke Tester 2.3.114",
+    "assetName": "firmware-2.3.114.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.114/firmware-2.3.114.bin",
     "sizeBytes": 1292944,
-    "sha256": "6ab3dcddd15541df73b0b0d2bdebc62c90688e440a1a36e6316ac607ee43cdf5"
+    "sha256": "53a6f9cdd24f102993de993c2123b25a1e6f4431c85c6a10e765f23469c92dd6"
   },
   "twinButton": {
     "version": "1.1.51",
