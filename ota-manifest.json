@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.110",
-    "name": "Smoke Tester 2.3.110",
+    "tag": "v2.3.111",
+    "name": "Smoke Tester 2.3.111",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.110",
-  "tag": "v2.3.110",
-  "releaseName": "Smoke Tester 2.3.110",
-  "notes": "Smoke-only OTA. Density selection now owns an atomic four-segment LED frame: every non-selected segment is forced off, mode handoff never overlays two segments, error cues use one exclusive segment, and the shared RMT mutex no longer sleeps while blocking the other strip. Start validation measures the cartridge passively on the already-selected 10/30/60/210 PWM instead of producing a fixed 192/255 smoke pulse, preserving the established pump and burst/pause behavior. Missing-cartridge and low-current faults keep Start blocked until a low-energy pump-off probe confirms physical reinsertion. Twin Button firmware content remains unchanged.",
-  "assetName": "firmware-2.3.110.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.110/firmware-2.3.110.bin",
-  "sizeBytes": 1293200,
-  "sha256": "f79fda7569e75e0a3be26358d498e2aabcbebbb05cc1bd62ed58f5c7e2ff7586",
+  "version": "2.3.111",
+  "tag": "v2.3.111",
+  "releaseName": "Smoke Tester 2.3.111",
+  "notes": "Emergency Smoke-only correction for 2.3.110. Removes cartridge identity sampling from every generation Start: the selected 10/30/60/210 PWM and pump now start together immediately, while the proven fixed 192/255 pump-off identity measurement runs only once during wake. This prevents valid cartridges from producing repeated no-cartridge or unstable-resistance events and removes the error-state delay from Start. Restores the established smooth error entry/exit animation and cancels the low-energy cartridge recovery probe as soon as a power-off hold is recognized, so error sound/LED state cannot interfere with shutdown. A confirmed critical missing-cartridge fault still blocks Start until pump-off reinsertion detection succeeds. Exclusive density-mode LED ownership from 2.3.110 is retained. Twin Button firmware content remains unchanged.",
+  "assetName": "firmware-2.3.111.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.111/firmware-2.3.111.bin",
+  "sizeBytes": 1292560,
+  "sha256": "1fc5cbcb04e77a758ff7ec9f11c0c8c60aed474b6fc01dc70fa3b5f6de48be2d",
   "smokeTester": {
-    "version": "2.3.110",
-    "tag": "v2.3.110",
-    "releaseName": "Smoke Tester 2.3.110",
-    "assetName": "firmware-2.3.110.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.110/firmware-2.3.110.bin",
-    "sizeBytes": 1293200,
-    "sha256": "f79fda7569e75e0a3be26358d498e2aabcbebbb05cc1bd62ed58f5c7e2ff7586"
+    "version": "2.3.111",
+    "tag": "v2.3.111",
+    "releaseName": "Smoke Tester 2.3.111",
+    "assetName": "firmware-2.3.111.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.111/firmware-2.3.111.bin",
+    "sizeBytes": 1292560,
+    "sha256": "1fc5cbcb04e77a758ff7ec9f11c0c8c60aed474b6fc01dc70fa3b5f6de48be2d"
   },
   "twinButton": {
     "version": "1.1.51",
