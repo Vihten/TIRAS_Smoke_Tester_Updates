@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.114",
-    "name": "Smoke Tester 2.3.114",
+    "tag": "v2.3.115",
+    "name": "Smoke Tester 2.3.115",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.114",
-  "tag": "v2.3.114",
-  "releaseName": "Smoke Tester 2.3.114",
-  "notes": "Smoke-only battery-preview wake classification correction. Fixes the 2.3.113 regression where setup time could complete the shortened startup timer while an ordinary charge-level tap was still electrically HIGH, causing an unintended full power-on. The battery level is still shown immediately, but the startup timer now begins only after that frame is visible and requires Wake to remain continuously asserted for a separate 100 ms confirmation window; any release keeps the interaction as a battery preview and returns the tester to sleep. Includes the protected two-button manual-density entry and exclusive two-LED crossfade from 2.3.113. Twin Button firmware content remains unchanged.",
-  "assetName": "firmware-2.3.114.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.114/firmware-2.3.114.bin",
-  "sizeBytes": 1292944,
-  "sha256": "53a6f9cdd24f102993de993c2123b25a1e6f4431c85c6a10e765f23469c92dd6",
+  "version": "2.3.115",
+  "tag": "v2.3.115",
+  "releaseName": "Smoke Tester 2.3.115",
+  "notes": "Smoke-only BLE runtime resource cleanup. Replaces the single deferred-client pointer with a bounded deduplicated reclamation queue, reuses static NimBLE callbacks to reduce heap fragmentation, and clears volatile scan, handshake, diagnostics, and session state without erasing BLE bonds or user settings. Adds free-heap and largest-block monitoring with a safe BLE-stack recycle only after persistent memory pressure while disconnected and idle; active generation, mode selection, OTA, and working phone/Twin links are never interrupted. The persistent diagnostics cache is now capped at 48 KiB during runtime, writes events in batches, retains the newest queued records, and rate-limits routine scan/heap telemetry to reduce SPIFFS stalls that could disturb LED and button timing. The proven manual power-off path still avoids deinitializing a live BLE connection. Twin Button firmware content remains unchanged.",
+  "assetName": "firmware-2.3.115.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.115/firmware-2.3.115.bin",
+  "sizeBytes": 1295008,
+  "sha256": "06c3e4a1c8d81643a897f6f00cf045995c711d154207aa422ebcbe83b15ba745",
   "smokeTester": {
-    "version": "2.3.114",
-    "tag": "v2.3.114",
-    "releaseName": "Smoke Tester 2.3.114",
-    "assetName": "firmware-2.3.114.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.114/firmware-2.3.114.bin",
-    "sizeBytes": 1292944,
-    "sha256": "53a6f9cdd24f102993de993c2123b25a1e6f4431c85c6a10e765f23469c92dd6"
+    "version": "2.3.115",
+    "tag": "v2.3.115",
+    "releaseName": "Smoke Tester 2.3.115",
+    "assetName": "firmware-2.3.115.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.115/firmware-2.3.115.bin",
+    "sizeBytes": 1295008,
+    "sha256": "06c3e4a1c8d81643a897f6f00cf045995c711d154207aa422ebcbe83b15ba745"
   },
   "twinButton": {
     "version": "1.1.51",
