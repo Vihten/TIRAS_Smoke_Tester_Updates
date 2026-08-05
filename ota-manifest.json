@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.98",
-    "name": "Smoke Tester 2.3.98",
+    "tag": "v2.3.99",
+    "name": "Smoke Tester 2.3.99",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.98",
-  "tag": "v2.3.98",
-  "releaseName": "Smoke Tester 2.3.98",
-  "notes": "Smoke-only OTA. A single Wake press while the tester is idle now immediately shows the current battery level with the existing fade, while a second press cleanly cancels that preview before Bluetooth search. The physical press that woke the ESP32-C3 is consumed as part of boot and can no longer contaminate the later single/double-click state. Generation Stop behavior is unchanged. Twin Button remains 1.1.51.",
-  "assetName": "firmware-2.3.98.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.98/firmware-2.3.98.bin",
-  "sizeBytes": 1289888,
-  "sha256": "a0ee787fec9578e009b068e3d75ab624b30ad7d9e155aebec7ba85cff98c98ff",
+  "version": "2.3.99",
+  "tag": "v2.3.99",
+  "releaseName": "Smoke Tester 2.3.99",
+  "notes": "Smoke-only OTA. Restores the proven 2.3.82 Wake gesture: a short press from deep sleep immediately previews the battery level, fades it, and returns to sleep; holding Wake requests the full startup. The boot press ignore state is now reconciled with the live GPIO when startup completes, so a release during startup can no longer consume the next real single press. The reset-safe manual-off fence is retained and its deferred NVS clear is completed before the preview returns to sleep. BLE, error indication, and Twin Button 1.1.51 behavior remain unchanged.",
+  "assetName": "firmware-2.3.99.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.99/firmware-2.3.99.bin",
+  "sizeBytes": 1290016,
+  "sha256": "e1bff1e8e883a6383052bd61a8bc95a6eb55e59ca97620dd5bbe2108157fbfc7",
   "smokeTester": {
-    "version": "2.3.98",
-    "tag": "v2.3.98",
-    "releaseName": "Smoke Tester 2.3.98",
-    "assetName": "firmware-2.3.98.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.98/firmware-2.3.98.bin",
-    "sizeBytes": 1289888,
-    "sha256": "a0ee787fec9578e009b068e3d75ab624b30ad7d9e155aebec7ba85cff98c98ff"
+    "version": "2.3.99",
+    "tag": "v2.3.99",
+    "releaseName": "Smoke Tester 2.3.99",
+    "assetName": "firmware-2.3.99.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.99/firmware-2.3.99.bin",
+    "sizeBytes": 1290016,
+    "sha256": "e1bff1e8e883a6383052bd61a8bc95a6eb55e59ca97620dd5bbe2108157fbfc7"
   },
   "twinButton": {
     "version": "1.1.51",
