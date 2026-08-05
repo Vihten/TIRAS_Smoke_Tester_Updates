@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.109",
-    "name": "Smoke Tester 2.3.109",
+    "tag": "v2.3.110",
+    "name": "Smoke Tester 2.3.110",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.109",
-  "tag": "v2.3.109",
-  "releaseName": "Smoke Tester 2.3.109",
-  "notes": "Smoke-only OTA. The blocking local density menu now services the task watchdog on every scheduler wait, preventing the ESP32-C3 radio/reset gap that Android reported as supervision timeout 0x08 during physical mode changes. Every physical density change is published immediately to the phone with the established 0x20-0x23 status and backed by a queued diagnostics snapshot. Entering manual density mode no longer latches the previous battery frame at the new brightness, removing the intermittent transition flash. Twin Button firmware content remains unchanged.",
-  "assetName": "firmware-2.3.109.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.109/firmware-2.3.109.bin",
-  "sizeBytes": 1293760,
-  "sha256": "0cae059b7da83de81b0946ba398c18cfff61589e46a6eeedd5bd9b2f03180049",
+  "version": "2.3.110",
+  "tag": "v2.3.110",
+  "releaseName": "Smoke Tester 2.3.110",
+  "notes": "Smoke-only OTA. Density selection now owns an atomic four-segment LED frame: every non-selected segment is forced off, mode handoff never overlays two segments, error cues use one exclusive segment, and the shared RMT mutex no longer sleeps while blocking the other strip. Start validation measures the cartridge passively on the already-selected 10/30/60/210 PWM instead of producing a fixed 192/255 smoke pulse, preserving the established pump and burst/pause behavior. Missing-cartridge and low-current faults keep Start blocked until a low-energy pump-off probe confirms physical reinsertion. Twin Button firmware content remains unchanged.",
+  "assetName": "firmware-2.3.110.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.110/firmware-2.3.110.bin",
+  "sizeBytes": 1293200,
+  "sha256": "f79fda7569e75e0a3be26358d498e2aabcbebbb05cc1bd62ed58f5c7e2ff7586",
   "smokeTester": {
-    "version": "2.3.109",
-    "tag": "v2.3.109",
-    "releaseName": "Smoke Tester 2.3.109",
-    "assetName": "firmware-2.3.109.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.109/firmware-2.3.109.bin",
-    "sizeBytes": 1293760,
-    "sha256": "0cae059b7da83de81b0946ba398c18cfff61589e46a6eeedd5bd9b2f03180049"
+    "version": "2.3.110",
+    "tag": "v2.3.110",
+    "releaseName": "Smoke Tester 2.3.110",
+    "assetName": "firmware-2.3.110.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.110/firmware-2.3.110.bin",
+    "sizeBytes": 1293200,
+    "sha256": "f79fda7569e75e0a3be26358d498e2aabcbebbb05cc1bd62ed58f5c7e2ff7586"
   },
   "twinButton": {
     "version": "1.1.51",
