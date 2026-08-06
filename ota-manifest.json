@@ -1,50 +1,50 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.132",
-    "name": "Smoke Tester 2.3.132 + Twin Button 1.1.53",
+    "tag": "v2.3.134",
+    "name": "Smoke Tester 2.3.134 + Twin Button 1.1.53",
     "components": [
       "smokeTester",
       "twinButton"
     ]
   },
-  "version": "2.3.132",
-  "tag": "v2.3.132",
-  "releaseName": "Smoke Tester 2.3.132 + Twin Button 1.1.53",
-  "notes": "Fixes Twin Button reconnect behavior: stale sleep requests can no longer restart Twin, late generation synchronization uses a smooth catch-up transition, and command acknowledgement stops repeated Start retries. Smoke Tester keeps cartridge faults in control, sends one synchronized reconnect reminder, and avoids the blocking reconnect fade while an error or generation owns the indicators. Fire Tester is unchanged.",
-  "assetName": "firmware-2.3.132.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.132/firmware-2.3.132.bin",
-  "sizeBytes": 1297488,
-  "sha256": "07470d74543ae05321cbd48caef444351a0368adf878be2bf8c53aaaaf3ea261",
+  "version": "2.3.134",
+  "tag": "v2.3.134",
+  "releaseName": "Smoke Tester 2.3.134 + Twin Button 1.1.53",
+  "notes": "Ends the white update cue and restores the phone link when Twin Button is asleep or unavailable by bounding peer discovery, stale-client cleanup, and the complete foreground handoff. The embedded Twin Button 1.1.53 package remains available for the next real Twin connection. A physical Smoke Tester Start or Stop now immediately queues authoritative generation, timer, and power telemetry so the app exposes Stop and live watts. Fire Tester is unchanged.",
+  "assetName": "firmware-2.3.134.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.134/firmware-2.3.134.bin",
+  "sizeBytes": 1297888,
+  "sha256": "1b982d26abf0d669ee59826d47b4ff8378eaffdaac66dffb7b29e1d38a5d6069",
   "smokeTester": {
-    "version": "2.3.132",
-    "tag": "v2.3.132",
-    "releaseName": "Smoke Tester 2.3.132 + Twin Button 1.1.53",
-    "assetName": "firmware-2.3.132.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.132/firmware-2.3.132.bin",
-    "sizeBytes": 1297488,
-    "sha256": "07470d74543ae05321cbd48caef444351a0368adf878be2bf8c53aaaaf3ea261"
+    "version": "2.3.134",
+    "tag": "v2.3.134",
+    "releaseName": "Smoke Tester 2.3.134 + Twin Button 1.1.53",
+    "assetName": "firmware-2.3.134.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.134/firmware-2.3.134.bin",
+    "sizeBytes": 1297888,
+    "sha256": "1b982d26abf0d669ee59826d47b4ff8378eaffdaac66dffb7b29e1d38a5d6069"
   },
   "twinButton": {
     "version": "1.1.53",
-    "embeddedInSmokeVersion": "2.3.132",
+    "embeddedInSmokeVersion": "2.3.134",
     "bin": {
       "assetName": "twin-button-1.1.53.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.132/twin-button-1.1.53.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.134/twin-button-1.1.53.bin",
       "sizeBytes": 168692,
       "sha256": "9546d66ce932abd646cb45c4f4e5896ce7ac9c308917b625b6592d2057884576"
     },
     "dat": {
       "assetName": "twin-button-1.1.53.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.132/twin-button-1.1.53.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.134/twin-button-1.1.53.dat",
       "sizeBytes": 14,
       "sha256": "c7d694eec50189416881668c1869563e36a4bb3456bcae4239e753923a8d5714"
     },
     "combinedSmokeBin": {
-      "assetName": "combined-smoke-2.3.132-twin-1.1.53.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.132/combined-smoke-2.3.132-twin-1.1.53.bin",
-      "sizeBytes": 1466864,
-      "sha256": "41dc5b3f523343ea542ca0e663bc16b5b55384cb4555f0812c933b2ecc02258b"
+      "assetName": "combined-smoke-2.3.134-twin-1.1.53.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.134/combined-smoke-2.3.134-twin-1.1.53.bin",
+      "sizeBytes": 1467264,
+      "sha256": "533faa99340f8725a6ca70227d3faab9bcff2ecbb7bcdd089edbb723923ebb3f"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
