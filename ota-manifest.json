@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.127",
-    "name": "Smoke Tester 2.3.127",
+    "tag": "v2.3.128",
+    "name": "Smoke Tester 2.3.128",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.127",
-  "tag": "v2.3.127",
-  "releaseName": "Smoke Tester 2.3.127",
-  "notes": "Smoke-only live power telemetry update. While generation is active, and for 600 ms after it stops, the power frame is sent every 120 ms instead of waiting for the six-stage background diagnostics rotation. Unrelated diagnostics keep their existing cadence, and failed ATT writes are still rate-limited to protect BLE control traffic. Twin Button firmware content is unchanged from 2.3.126.",
-  "assetName": "firmware-2.3.127.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.127/firmware-2.3.127.bin",
-  "sizeBytes": 1295072,
-  "sha256": "5fc794b979427cfa25366a56d1e1ddd2d0d1d1f3c44ba05af0324b85e6f4a457",
+  "version": "2.3.128",
+  "tag": "v2.3.128",
+  "releaseName": "Smoke Tester 2.3.128",
+  "notes": "Smoke-only cartridge start-safety fix. Every generation request now runs a short low-energy cartridge-presence preflight with the pumps held off; the selected heater output and pumps start together only after insertion is confirmed. An empty socket is reported as No cartridge detected instead of Low generator current. Explicit Start retries presence faults, so generation can recover after reinserting the cartridge without rebooting or duplicating the same stored fault. Start-preflight activity is excluded from generation LED and fast-power telemetry. Twin Button firmware is unchanged at 1.1.51; Fire Tester is unchanged.",
+  "assetName": "firmware-2.3.128.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.128/firmware-2.3.128.bin",
+  "sizeBytes": 1296064,
+  "sha256": "e0a7c5011b9ef011a1f3ef293b34f689412d9dbb8b2649ddab89a5acd4168bdd",
   "smokeTester": {
-    "version": "2.3.127",
-    "tag": "v2.3.127",
-    "releaseName": "Smoke Tester 2.3.127",
-    "assetName": "firmware-2.3.127.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.127/firmware-2.3.127.bin",
-    "sizeBytes": 1295072,
-    "sha256": "5fc794b979427cfa25366a56d1e1ddd2d0d1d1f3c44ba05af0324b85e6f4a457"
+    "version": "2.3.128",
+    "tag": "v2.3.128",
+    "releaseName": "Smoke Tester 2.3.128",
+    "assetName": "firmware-2.3.128.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.128/firmware-2.3.128.bin",
+    "sizeBytes": 1296064,
+    "sha256": "e0a7c5011b9ef011a1f3ef293b34f689412d9dbb8b2649ddab89a5acd4168bdd"
   },
   "twinButton": {
     "version": "1.1.51",
