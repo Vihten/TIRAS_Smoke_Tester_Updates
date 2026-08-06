@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.117",
-    "name": "Smoke Tester 2.3.117",
+    "tag": "v2.3.118",
+    "name": "Smoke Tester 2.3.118",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.117",
-  "tag": "v2.3.117",
-  "releaseName": "Smoke Tester 2.3.117",
-  "notes": "Smoke-only four-segment battery-indicator frame serialization. The mutable battery NeoPixel buffer is now private to one module; battery preview, charge updates, manual density selection and comet transition, error cues, low-voltage indication, and OTA clear operations compose all four segments locally and replace the complete frame under the same indicator-bus mutex as the physical RMT latch. This removes partial-frame exposure on physical segments 3 and 4 during interaction while keeping the BLE protocol and the two main status LEDs unchanged. Twin Button firmware content remains unchanged.",
-  "assetName": "firmware-2.3.117.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.117/firmware-2.3.117.bin",
-  "sizeBytes": 1294544,
-  "sha256": "fe20adc411e6c840126d6697027129dd13588fa5688a7136faccd3b33c57e90a",
+  "version": "2.3.118",
+  "tag": "v2.3.118",
+  "releaseName": "Smoke Tester 2.3.118",
+  "notes": "Smoke-only ESP32-C3 WS2812/RMT tail-frame correction. Each NeoPixel transmission now reserves enough contiguous RMT hardware memory for the complete frame and its stop item. The four-segment battery strip therefore no longer depends on a threshold interrupt to refill the data for physical LEDs 3 and 4 while BLE is active. Battery preview and manual-density transition animations, their timing, the BLE protocol, and Twin Button firmware content remain unchanged.",
+  "assetName": "firmware-2.3.118.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.118/firmware-2.3.118.bin",
+  "sizeBytes": 1294640,
+  "sha256": "a466936f27772f9a678e6d86757ef26103d0132d02e7260520af32edfe5e0a8b",
   "smokeTester": {
-    "version": "2.3.117",
-    "tag": "v2.3.117",
-    "releaseName": "Smoke Tester 2.3.117",
-    "assetName": "firmware-2.3.117.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.117/firmware-2.3.117.bin",
-    "sizeBytes": 1294544,
-    "sha256": "fe20adc411e6c840126d6697027129dd13588fa5688a7136faccd3b33c57e90a"
+    "version": "2.3.118",
+    "tag": "v2.3.118",
+    "releaseName": "Smoke Tester 2.3.118",
+    "assetName": "firmware-2.3.118.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.118/firmware-2.3.118.bin",
+    "sizeBytes": 1294640,
+    "sha256": "a466936f27772f9a678e6d86757ef26103d0132d02e7260520af32edfe5e0a8b"
   },
   "twinButton": {
     "version": "1.1.51",
