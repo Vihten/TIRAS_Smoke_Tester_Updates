@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.120",
-    "name": "Smoke Tester 2.3.120",
+    "tag": "v2.3.121",
+    "name": "Smoke Tester 2.3.121",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.120",
-  "tag": "v2.3.120",
-  "releaseName": "Smoke Tester 2.3.120",
-  "notes": "Smoke-only power-transition and battery-gauge correction. Startup intent is now measured during the non-blocking battery animation: the real continuous hold is 100 ms with no hidden 300 ms fade before it, while an earlier release still completes the battery preview and returns to sleep. Manual shutdown keeps the 1000 ms intent guard, then uses one synchronized 250 ms LED fade and beep instead of the former 500-1000 ms state-specific tail. At 0-25% the two lower battery LEDs (3 and 4) are always lit, and every battery animation uses the same monotonic segment policy. BLE protocol and Twin Button firmware content are unchanged.",
-  "assetName": "firmware-2.3.120.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.120/firmware-2.3.120.bin",
-  "sizeBytes": 1294624,
-  "sha256": "b0526013101fd69bb93776748106ccec39fe493dda5d98d8b311fbbd86ad311d",
+  "version": "2.3.121",
+  "tag": "v2.3.121",
+  "releaseName": "Smoke Tester 2.3.121",
+  "notes": "Smoke-only startup and shutdown responsiveness correction. A confirmed power-on hold now latches the battery frame at full brightness before BLE/NVS initialization, and normal runtime no longer waits for the cosmetic battery animation; the safety probe and status transition remain active but complete in about 450 ms. Manual shutdown keeps the existing one-second intent guard and extends the final visible fade by exactly 500 ms, from 250 to 750 ms. BLE shutdown, persistence, wake-source setup and original-button release handling now all finish before that fade, so the device enters deep sleep immediately after the LEDs go black and a new held Wake press can wake it without a hidden dead interval. Battery fade staggering now follows only the LEDs that are actually active. BLE protocol and Twin Button firmware content are unchanged.",
+  "assetName": "firmware-2.3.121.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.121/firmware-2.3.121.bin",
+  "sizeBytes": 1294832,
+  "sha256": "13128c8d4690f9400f1079e4bff16412260374c847d46031649eae5e146343e7",
   "smokeTester": {
-    "version": "2.3.120",
-    "tag": "v2.3.120",
-    "releaseName": "Smoke Tester 2.3.120",
-    "assetName": "firmware-2.3.120.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.120/firmware-2.3.120.bin",
-    "sizeBytes": 1294624,
-    "sha256": "b0526013101fd69bb93776748106ccec39fe493dda5d98d8b311fbbd86ad311d"
+    "version": "2.3.121",
+    "tag": "v2.3.121",
+    "releaseName": "Smoke Tester 2.3.121",
+    "assetName": "firmware-2.3.121.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.121/firmware-2.3.121.bin",
+    "sizeBytes": 1294832,
+    "sha256": "13128c8d4690f9400f1079e4bff16412260374c847d46031649eae5e146343e7"
   },
   "twinButton": {
     "version": "1.1.51",
