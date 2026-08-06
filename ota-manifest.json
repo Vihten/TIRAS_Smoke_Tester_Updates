@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.121",
-    "name": "Smoke Tester 2.3.121",
+    "tag": "v2.3.122",
+    "name": "Smoke Tester 2.3.122",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.121",
-  "tag": "v2.3.121",
-  "releaseName": "Smoke Tester 2.3.121",
-  "notes": "Smoke-only startup and shutdown responsiveness correction. A confirmed power-on hold now latches the battery frame at full brightness before BLE/NVS initialization, and normal runtime no longer waits for the cosmetic battery animation; the safety probe and status transition remain active but complete in about 450 ms. Manual shutdown keeps the existing one-second intent guard and extends the final visible fade by exactly 500 ms, from 250 to 750 ms. BLE shutdown, persistence, wake-source setup and original-button release handling now all finish before that fade, so the device enters deep sleep immediately after the LEDs go black and a new held Wake press can wake it without a hidden dead interval. Battery fade staggering now follows only the LEDs that are actually active. BLE protocol and Twin Button firmware content are unchanged.",
-  "assetName": "firmware-2.3.121.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.121/firmware-2.3.121.bin",
-  "sizeBytes": 1294832,
-  "sha256": "13128c8d4690f9400f1079e4bff16412260374c847d46031649eae5e146343e7",
+  "version": "2.3.122",
+  "tag": "v2.3.122",
+  "releaseName": "Smoke Tester 2.3.122",
+  "notes": "Smoke-only manual power-off ordering correction. The existing one-second hold now starts the 750 ms shutdown animation while Wake is still held; releasing Wake is the separate final gate that powers down PERIPHERY and enters deep sleep. BLE shutdown, persistence and wake-source setup still finish before the animation, so no variable-latency work remains after release and the previous hidden unresponsive interval does not return. A regression policy test enforces animation before release waiting. Startup timing, battery indication, BLE protocol and Twin Button firmware content are unchanged from 2.3.121.",
+  "assetName": "firmware-2.3.122.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.122/firmware-2.3.122.bin",
+  "sizeBytes": 1294848,
+  "sha256": "a2c301397c599ed6c26619c61a765ee0677b410a97b0a0a7fd485c2d6c9e5f3a",
   "smokeTester": {
-    "version": "2.3.121",
-    "tag": "v2.3.121",
-    "releaseName": "Smoke Tester 2.3.121",
-    "assetName": "firmware-2.3.121.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.121/firmware-2.3.121.bin",
-    "sizeBytes": 1294832,
-    "sha256": "13128c8d4690f9400f1079e4bff16412260374c847d46031649eae5e146343e7"
+    "version": "2.3.122",
+    "tag": "v2.3.122",
+    "releaseName": "Smoke Tester 2.3.122",
+    "assetName": "firmware-2.3.122.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.122/firmware-2.3.122.bin",
+    "sizeBytes": 1294848,
+    "sha256": "a2c301397c599ed6c26619c61a765ee0677b410a97b0a0a7fd485c2d6c9e5f3a"
   },
   "twinButton": {
     "version": "1.1.51",
