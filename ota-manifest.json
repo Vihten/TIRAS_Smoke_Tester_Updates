@@ -1,49 +1,50 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.129",
-    "name": "Smoke Tester 2.3.129",
+    "tag": "v2.3.130",
+    "name": "Smoke Tester 2.3.130 + Twin Button 1.1.52",
     "components": [
-      "smokeTester"
+      "smokeTester",
+      "twinButton"
     ]
   },
-  "version": "2.3.129",
-  "tag": "v2.3.129",
-  "releaseName": "Smoke Tester 2.3.129",
-  "notes": "Smoke-only power and recovery polish. Power telemetry now becomes a known 0 W immediately when generation stops or pauses, and the low-energy cartridge-presence preflight remains private instead of appearing as a 1.7 W output. Battery telemetry is primed before the first BLE snapshot after an OTA reboot. Power-on and power-off indication and sound sequences are slightly longer while their physical hold thresholds remain unchanged. Twin Button firmware is unchanged at 1.1.51; Fire Tester is unchanged.",
-  "assetName": "firmware-2.3.129.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.129/firmware-2.3.129.bin",
-  "sizeBytes": 1296224,
-  "sha256": "5ab152561177da4682fc359d0f317e1c40dd4f48d3c653dcc2c0432de3bf1745",
+  "version": "2.3.130",
+  "tag": "v2.3.130",
+  "releaseName": "Smoke Tester 2.3.130 + Twin Button 1.1.52",
+  "notes": "Paired Smoke/Twin release. Twin dispatches Smoke Start without the previous 320 ms single/double-click delay and begins indication only from Smoke's confirmed generation state. Smoke now sends clocked generation and error-effect epochs so both devices render the transition and recurring fault reminder together. Active density selection rejects stale AutoSleep events. Fire Tester is unchanged.",
+  "assetName": "firmware-2.3.130.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.130/firmware-2.3.130.bin",
+  "sizeBytes": 1296512,
+  "sha256": "609ccc92316e6097a2cb90c3a20774da6d855a96d44c80752cb15cc2c59ddb8b",
   "smokeTester": {
-    "version": "2.3.129",
-    "tag": "v2.3.129",
-    "releaseName": "Smoke Tester 2.3.129",
-    "assetName": "firmware-2.3.129.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.129/firmware-2.3.129.bin",
-    "sizeBytes": 1296224,
-    "sha256": "5ab152561177da4682fc359d0f317e1c40dd4f48d3c653dcc2c0432de3bf1745"
+    "version": "2.3.130",
+    "tag": "v2.3.130",
+    "releaseName": "Smoke Tester 2.3.130 + Twin Button 1.1.52",
+    "assetName": "firmware-2.3.130.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.130/firmware-2.3.130.bin",
+    "sizeBytes": 1296512,
+    "sha256": "609ccc92316e6097a2cb90c3a20774da6d855a96d44c80752cb15cc2c59ddb8b"
   },
   "twinButton": {
-    "version": "1.1.51",
-    "embeddedInSmokeVersion": "2.3.82",
+    "version": "1.1.52",
+    "embeddedInSmokeVersion": "2.3.130",
     "bin": {
-      "assetName": "twin-button-1.1.51.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.82/twin-button-1.1.51.bin",
-      "sizeBytes": 166036,
-      "sha256": "9502a4879e1bfaf3a513b9e6c0ee694aedb1352edc8e5e4f05c265cbfcbefd91"
+      "assetName": "twin-button-1.1.52.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.130/twin-button-1.1.52.bin",
+      "sizeBytes": 168532,
+      "sha256": "602e0d6bb80a115679f49532e155d537924ad534b7fa5be5c09f1ce7766d602e"
     },
     "dat": {
-      "assetName": "twin-button-1.1.51.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.82/twin-button-1.1.51.dat",
+      "assetName": "twin-button-1.1.52.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.130/twin-button-1.1.52.dat",
       "sizeBytes": 14,
-      "sha256": "51402aeedd1ec400e5d85e54f6535c750de0363e62ed120cde47382924d558b9"
+      "sha256": "a334fe6f737aec06f899b35bfcd5b48dc333baf6c6b1549591dccf7013f98e9c"
     },
     "combinedSmokeBin": {
-      "assetName": "combined-smoke-2.3.82-twin-1.1.51.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.82/combined-smoke-2.3.82-twin-1.1.51.bin",
-      "sizeBytes": 1451312,
-      "sha256": "162b1c24574d4c75775d58160c2b1647267ea7c453b263db5c6e50936cbd4f0c"
+      "assetName": "combined-smoke-2.3.130-twin-1.1.52.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.130/combined-smoke-2.3.130-twin-1.1.52.bin",
+      "sizeBytes": 1465728,
+      "sha256": "8a50c68dee646aeac656147f16e55c602ed6a39a153bd0fce8edd0e1f68245ce"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
