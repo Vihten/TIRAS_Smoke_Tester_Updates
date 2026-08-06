@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.115",
-    "name": "Smoke Tester 2.3.115",
+    "tag": "v2.3.116",
+    "name": "Smoke Tester 2.3.116",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.115",
-  "tag": "v2.3.115",
-  "releaseName": "Smoke Tester 2.3.115",
-  "notes": "Smoke-only BLE runtime resource cleanup. Replaces the single deferred-client pointer with a bounded deduplicated reclamation queue, reuses static NimBLE callbacks to reduce heap fragmentation, and clears volatile scan, handshake, diagnostics, and session state without erasing BLE bonds or user settings. Adds free-heap and largest-block monitoring with a safe BLE-stack recycle only after persistent memory pressure while disconnected and idle; active generation, mode selection, OTA, and working phone/Twin links are never interrupted. The persistent diagnostics cache is now capped at 48 KiB during runtime, writes events in batches, retains the newest queued records, and rate-limits routine scan/heap telemetry to reduce SPIFFS stalls that could disturb LED and button timing. The proven manual power-off path still avoids deinitializing a live BLE connection. Twin Button firmware content remains unchanged.",
-  "assetName": "firmware-2.3.115.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.115/firmware-2.3.115.bin",
-  "sizeBytes": 1295008,
-  "sha256": "06c3e4a1c8d81643a897f6f00cf045995c711d154207aa422ebcbe83b15ba745",
+  "version": "2.3.116",
+  "tag": "v2.3.116",
+  "releaseName": "Smoke Tester 2.3.116",
+  "notes": "Smoke-only wake and BLE LED timing correction. Halves the post-battery-frame Wake confirmation from 100 ms to 50 ms while retaining the separate continuously-held GPIO check, so a short charge-level preview still cannot become an unintended power-on. Normal connected BLE sessions no longer perform routine SPIFFS diagnostic writes or persist scan/heap health chatter on the single ESP32-C3 core; the bounded RAM queue keeps the newest records and flushes after disconnect, while foreground OTA/DFU checkpoints remain persistent. High-frequency generation and connected-status frames now update both main NeoPixels and the physical RMT latch in one serialized transaction, preventing competing status writers from exposing a partial two-LED frame. BLE memory sampling and safe disconnected-idle recovery remain enabled. Twin Button firmware content remains unchanged.",
+  "assetName": "firmware-2.3.116.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.116/firmware-2.3.116.bin",
+  "sizeBytes": 1295088,
+  "sha256": "1dd6fb421321e29fec90cd12795f9c444042ea8a52fa2c23c416a3909c443ab7",
   "smokeTester": {
-    "version": "2.3.115",
-    "tag": "v2.3.115",
-    "releaseName": "Smoke Tester 2.3.115",
-    "assetName": "firmware-2.3.115.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.115/firmware-2.3.115.bin",
-    "sizeBytes": 1295008,
-    "sha256": "06c3e4a1c8d81643a897f6f00cf045995c711d154207aa422ebcbe83b15ba745"
+    "version": "2.3.116",
+    "tag": "v2.3.116",
+    "releaseName": "Smoke Tester 2.3.116",
+    "assetName": "firmware-2.3.116.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.116/firmware-2.3.116.bin",
+    "sizeBytes": 1295088,
+    "sha256": "1dd6fb421321e29fec90cd12795f9c444042ea8a52fa2c23c416a3909c443ab7"
   },
   "twinButton": {
     "version": "1.1.51",
