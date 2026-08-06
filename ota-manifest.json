@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.124",
-    "name": "Smoke Tester 2.3.124",
+    "tag": "v2.3.125",
+    "name": "Smoke Tester 2.3.125",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.124",
-  "tag": "v2.3.124",
-  "releaseName": "Smoke Tester 2.3.124",
-  "notes": "Smoke-only startup timing adjustment. The continuous Wake hold required for full power-on is reduced exactly in half, from 1500 to 750 ms, measured from the first GPIO decision point with no hidden LED or setup delay. Shorter presses still complete only the battery preview and return to sleep. Battery-frame latching, manual shutdown ordering, BLE protocol and Twin Button firmware content are unchanged from 2.3.123.",
-  "assetName": "firmware-2.3.124.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.124/firmware-2.3.124.bin",
+  "version": "2.3.125",
+  "tag": "v2.3.125",
+  "releaseName": "Smoke Tester 2.3.125",
+  "notes": "Smoke-only startup timing adjustment. The continuous Wake hold required for full power-on is reduced exactly in half again, from 750 to 375 ms, measured from the first GPIO decision point with no hidden LED or setup delay. Shorter presses still complete only the battery preview and return to sleep. Battery-frame latching, manual shutdown ordering, BLE protocol and Twin Button firmware content are unchanged from 2.3.124.",
+  "assetName": "firmware-2.3.125.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.125/firmware-2.3.125.bin",
   "sizeBytes": 1294912,
-  "sha256": "88f771633c23bff22e2afb16c889ad27c467c270f14aea9780faf948f4ee2cfb",
+  "sha256": "f9323e0f904475d98e869fb3ecf09713e656816944ce35f17957a7fd351ea813",
   "smokeTester": {
-    "version": "2.3.124",
-    "tag": "v2.3.124",
-    "releaseName": "Smoke Tester 2.3.124",
-    "assetName": "firmware-2.3.124.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.124/firmware-2.3.124.bin",
+    "version": "2.3.125",
+    "tag": "v2.3.125",
+    "releaseName": "Smoke Tester 2.3.125",
+    "assetName": "firmware-2.3.125.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.125/firmware-2.3.125.bin",
     "sizeBytes": 1294912,
-    "sha256": "88f771633c23bff22e2afb16c889ad27c467c270f14aea9780faf948f4ee2cfb"
+    "sha256": "f9323e0f904475d98e869fb3ecf09713e656816944ce35f17957a7fd351ea813"
   },
   "twinButton": {
     "version": "1.1.51",
