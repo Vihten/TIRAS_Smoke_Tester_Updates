@@ -1,50 +1,50 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.137",
-    "name": "Smoke Tester 2.3.137 + Twin Button 1.1.53",
+    "tag": "v2.3.138",
+    "name": "Smoke Tester 2.3.138 + Twin Button 1.1.53",
     "components": [
       "smokeTester",
       "twinButton"
     ]
   },
-  "version": "2.3.137",
-  "tag": "v2.3.137",
-  "releaseName": "Smoke Tester 2.3.137 + Twin Button 1.1.53",
-  "notes": "Makes the single-link Twin update handoff deterministic. Smoke Tester passively confirms that Twin Button is advertising before releasing the phone, reports a clear not-found result without disconnecting when Twin is asleep, then returns to the phone after the separate Twin update. Fire Tester firmware is unchanged.",
-  "assetName": "firmware-2.3.137.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.137/firmware-2.3.137.bin",
-  "sizeBytes": 1299504,
-  "sha256": "14f111f03c6a2d87f2b300ab7e242080d4780d4f600157d4543e548e287b27fb",
+  "version": "2.3.138",
+  "tag": "v2.3.138",
+  "releaseName": "Smoke Tester 2.3.138 + Twin Button 1.1.53",
+  "notes": "Enforces one active Smoke Tester link during an app-triggered Twin Button update. Phone advertising stays off while Twin owns the handoff; after Twin 1.1.53 is verified, Smoke releases Twin, recycles BLE, and advertises for the app again. Fire Tester firmware is unchanged.",
+  "assetName": "firmware-2.3.138.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.138/firmware-2.3.138.bin",
+  "sizeBytes": 1299792,
+  "sha256": "65ac4e15218d7f25ff95a22460ab6fdcfcf7c19950a13176b331d7d826b727b5",
   "smokeTester": {
-    "version": "2.3.137",
-    "tag": "v2.3.137",
-    "releaseName": "Smoke Tester 2.3.137 + Twin Button 1.1.53",
-    "assetName": "firmware-2.3.137.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.137/firmware-2.3.137.bin",
-    "sizeBytes": 1299504,
-    "sha256": "14f111f03c6a2d87f2b300ab7e242080d4780d4f600157d4543e548e287b27fb"
+    "version": "2.3.138",
+    "tag": "v2.3.138",
+    "releaseName": "Smoke Tester 2.3.138 + Twin Button 1.1.53",
+    "assetName": "firmware-2.3.138.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.138/firmware-2.3.138.bin",
+    "sizeBytes": 1299792,
+    "sha256": "65ac4e15218d7f25ff95a22460ab6fdcfcf7c19950a13176b331d7d826b727b5"
   },
   "twinButton": {
     "version": "1.1.53",
-    "embeddedInSmokeVersion": "2.3.137",
+    "embeddedInSmokeVersion": "2.3.138",
     "bin": {
       "assetName": "twin-button-1.1.53.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.137/twin-button-1.1.53.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.138/twin-button-1.1.53.bin",
       "sizeBytes": 168692,
       "sha256": "9546d66ce932abd646cb45c4f4e5896ce7ac9c308917b625b6592d2057884576"
     },
     "dat": {
       "assetName": "twin-button-1.1.53.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.137/twin-button-1.1.53.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.138/twin-button-1.1.53.dat",
       "sizeBytes": 14,
       "sha256": "c7d694eec50189416881668c1869563e36a4bb3456bcae4239e753923a8d5714"
     },
     "combinedSmokeBin": {
-      "assetName": "combined-smoke-2.3.137-twin-1.1.53.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.137/combined-smoke-2.3.137-twin-1.1.53.bin",
-      "sizeBytes": 1468880,
-      "sha256": "21eaf6d96ab934008dfb5157347758af39be8ed272ee4747241df08c68780240"
+      "assetName": "combined-smoke-2.3.138-twin-1.1.53.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.138/combined-smoke-2.3.138-twin-1.1.53.bin",
+      "sizeBytes": 1469168,
+      "sha256": "f0524f4534e12c0374043bf2888a5cd1c16b1c870ebc43e7b579e2c923765c13"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
