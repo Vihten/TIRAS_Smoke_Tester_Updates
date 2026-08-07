@@ -1,50 +1,50 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.135",
-    "name": "Smoke Tester 2.3.135 + Twin Button 1.1.53",
+    "tag": "v2.3.136",
+    "name": "Smoke Tester 2.3.136 + Twin Button 1.1.53",
     "components": [
       "smokeTester",
       "twinButton"
     ]
   },
-  "version": "2.3.135",
-  "tag": "v2.3.135",
-  "releaseName": "Smoke Tester 2.3.135 + Twin Button 1.1.53",
-  "notes": "Stops false firmware-update blinking after a verified Smoke Tester restart. Post-update Twin discovery and version checks are now silent; the white LED update cue begins only after an outdated Twin Button is identified and accepts the prepare command. Recovery preserves a cue only when a real transfer had already started. The embedded Twin Button 1.1.53 package remains available, and Fire Tester is unchanged.",
-  "assetName": "firmware-2.3.135.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.135/firmware-2.3.135.bin",
-  "sizeBytes": 1297920,
-  "sha256": "3f8c26b6a4d1dec13d5500d0408d717a862bb89db7cc624a544ae92841cd48da",
+  "version": "2.3.136",
+  "tag": "v2.3.136",
+  "releaseName": "Smoke Tester 2.3.136 + Twin Button 1.1.53",
+  "notes": "Adds an explicit, bounded retry for the embedded Twin Button update when Smoke Tester is current but the confirmed Twin version is still older. The companion app can now request the stored Twin 1.1.53 package without reflashing Smoke Tester. Fire Tester firmware is unchanged.",
+  "assetName": "firmware-2.3.136.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.136/firmware-2.3.136.bin",
+  "sizeBytes": 1298320,
+  "sha256": "5c79d6ad60e8493b19547a76db1248f5b8c5e0814e4eec33b95d58e477066aa7",
   "smokeTester": {
-    "version": "2.3.135",
-    "tag": "v2.3.135",
-    "releaseName": "Smoke Tester 2.3.135 + Twin Button 1.1.53",
-    "assetName": "firmware-2.3.135.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.135/firmware-2.3.135.bin",
-    "sizeBytes": 1297920,
-    "sha256": "3f8c26b6a4d1dec13d5500d0408d717a862bb89db7cc624a544ae92841cd48da"
+    "version": "2.3.136",
+    "tag": "v2.3.136",
+    "releaseName": "Smoke Tester 2.3.136 + Twin Button 1.1.53",
+    "assetName": "firmware-2.3.136.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.136/firmware-2.3.136.bin",
+    "sizeBytes": 1298320,
+    "sha256": "5c79d6ad60e8493b19547a76db1248f5b8c5e0814e4eec33b95d58e477066aa7"
   },
   "twinButton": {
     "version": "1.1.53",
-    "embeddedInSmokeVersion": "2.3.135",
+    "embeddedInSmokeVersion": "2.3.136",
     "bin": {
       "assetName": "twin-button-1.1.53.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.135/twin-button-1.1.53.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.136/twin-button-1.1.53.bin",
       "sizeBytes": 168692,
       "sha256": "9546d66ce932abd646cb45c4f4e5896ce7ac9c308917b625b6592d2057884576"
     },
     "dat": {
       "assetName": "twin-button-1.1.53.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.135/twin-button-1.1.53.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.136/twin-button-1.1.53.dat",
       "sizeBytes": 14,
       "sha256": "c7d694eec50189416881668c1869563e36a4bb3456bcae4239e753923a8d5714"
     },
     "combinedSmokeBin": {
-      "assetName": "combined-smoke-2.3.135-twin-1.1.53.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.135/combined-smoke-2.3.135-twin-1.1.53.bin",
-      "sizeBytes": 1467280,
-      "sha256": "db885de066e6f0f7067b7497ac1186dd38a66a15200b590e5b963530ee101144"
+      "assetName": "combined-smoke-2.3.136-twin-1.1.53.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.136/combined-smoke-2.3.136-twin-1.1.53.bin",
+      "sizeBytes": 1467696,
+      "sha256": "273ce48e2e4cceb5aa39c87432c8dacb63a40edcb273a44bf56cfd96b308e8d2"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
