@@ -1,50 +1,43 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.139",
-    "name": "Smoke Tester 2.3.139 + Twin Button 1.1.53",
+    "tag": "v2.3.139-twin-1.1.54",
+    "name": "Smoke Tester 2.3.139 + Twin Button 1.1.54",
     "components": [
       "smokeTester",
       "twinButton"
     ]
   },
   "version": "2.3.139",
-  "tag": "v2.3.139",
-  "releaseName": "Smoke Tester 2.3.139 + Twin Button 1.1.53",
-  "notes": "Prevents a retried Twin Button update request from competing with its active Smoke handoff. Smoke replays the current handoff state and waits for Android to receive it before releasing the single BLE link. Fire Tester firmware is unchanged.",
+  "tag": "v2.3.139-twin-1.1.54",
+  "releaseName": "Smoke Tester 2.3.139 + Twin Button 1.1.54",
+  "notes": "Publishes Twin Button 1.1.54 as a standalone package for Smoke Tester storage and autonomous Twin DFU testing. Smoke Tester and Fire Tester firmware are unchanged.",
   "assetName": "firmware-2.3.139.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.139/firmware-2.3.139.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.139-twin-1.1.54/firmware-2.3.139.bin",
   "sizeBytes": 1299920,
   "sha256": "0a3c1bb552ea973f40153886a77e170a32306403d02c469b7794264ce8bf6f15",
   "smokeTester": {
     "version": "2.3.139",
-    "tag": "v2.3.139",
-    "releaseName": "Smoke Tester 2.3.139 + Twin Button 1.1.53",
+    "tag": "v2.3.139-twin-1.1.54",
+    "releaseName": "Smoke Tester 2.3.139 + Twin Button 1.1.54",
     "assetName": "firmware-2.3.139.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.139/firmware-2.3.139.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.139-twin-1.1.54/firmware-2.3.139.bin",
     "sizeBytes": 1299920,
     "sha256": "0a3c1bb552ea973f40153886a77e170a32306403d02c469b7794264ce8bf6f15"
   },
   "twinButton": {
-    "version": "1.1.53",
-    "embeddedInSmokeVersion": "2.3.139",
+    "version": "1.1.54",
     "bin": {
-      "assetName": "twin-button-1.1.53.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.139/twin-button-1.1.53.bin",
+      "assetName": "twin-button-1.1.54.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.139-twin-1.1.54/twin-button-1.1.54.bin",
       "sizeBytes": 168692,
-      "sha256": "9546d66ce932abd646cb45c4f4e5896ce7ac9c308917b625b6592d2057884576"
+      "sha256": "a85dd8eb1e3da5e486e61312763136cd9285b253f99e99bff6e341608bc35771"
     },
     "dat": {
-      "assetName": "twin-button-1.1.53.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.139/twin-button-1.1.53.dat",
+      "assetName": "twin-button-1.1.54.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.139-twin-1.1.54/twin-button-1.1.54.dat",
       "sizeBytes": 14,
-      "sha256": "c7d694eec50189416881668c1869563e36a4bb3456bcae4239e753923a8d5714"
-    },
-    "combinedSmokeBin": {
-      "assetName": "combined-smoke-2.3.139-twin-1.1.53.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.139/combined-smoke-2.3.139-twin-1.1.53.bin",
-      "sizeBytes": 1469280,
-      "sha256": "e59993b55d7438e1159c7599bba3b31134441dd68ea9b4e089c705001947e6aa"
+      "sha256": "f3cc013987844ff4b452bde5743a92881981019fc608a045f3e18102b1258d42"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
