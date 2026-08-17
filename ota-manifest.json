@@ -1,29 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.146-twin-1.1.58",
-    "name": "Smoke Tester 2.3.146 + Twin Button 1.1.58",
+    "tag": "v2.3.147",
+    "name": "Smoke Tester 2.3.147",
     "components": [
-      "smokeTester",
-      "twinButton"
+      "smokeTester"
     ]
   },
-  "version": "2.3.146",
-  "tag": "v2.3.146-twin-1.1.58",
-  "releaseName": "Smoke Tester 2.3.146 + Twin Button 1.1.58",
-  "notes": "Twin Button 1.1.58 removes the remaining generation-animation brightness seam by continuing from the physically displayed final entry frame, completing the tiny brightness remainder during the fixed red peak, and delaying phase correction until that peak has finished. Smoke Tester 2.3.146 and Fire Tester are unchanged.",
-  "assetName": "firmware-2.3.146.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.146-twin-1.1.58/firmware-2.3.146.bin",
-  "sizeBytes": 1300640,
-  "sha256": "1e0785b7a86cd662c7153feae507893c2b65a23a8e827b1639126cd21800ec5f",
+  "version": "2.3.147",
+  "tag": "v2.3.147",
+  "releaseName": "Smoke Tester 2.3.147",
+  "notes": "Smoke Tester 2.3.147 adds persistent profile attribution for smoke-generation starts and device errors. Each event stores a compact profile ID; the phone restores the nickname and avatar from its compact profile data. Twin Button and Fire Tester are unchanged.",
+  "assetName": "firmware-2.3.147.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.147/firmware-2.3.147.bin",
+  "sizeBytes": 1305680,
+  "sha256": "9cbc5b9227176de7d86756c3509531948042240a364a25d5314b8d1051470783",
   "smokeTester": {
-    "version": "2.3.146",
-    "tag": "v2.3.146-twin-1.1.58",
-    "releaseName": "Smoke Tester 2.3.146 + Twin Button 1.1.58",
-    "assetName": "firmware-2.3.146.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.146-twin-1.1.58/firmware-2.3.146.bin",
-    "sizeBytes": 1300640,
-    "sha256": "1e0785b7a86cd662c7153feae507893c2b65a23a8e827b1639126cd21800ec5f"
+    "version": "2.3.147",
+    "tag": "v2.3.147",
+    "releaseName": "Smoke Tester 2.3.147",
+    "assetName": "firmware-2.3.147.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.147/firmware-2.3.147.bin",
+    "sizeBytes": 1305680,
+    "sha256": "9cbc5b9227176de7d86756c3509531948042240a364a25d5314b8d1051470783"
   },
   "twinButton": {
     "version": "1.1.58",
