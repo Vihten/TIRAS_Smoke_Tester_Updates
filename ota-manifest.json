@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.148",
-    "name": "Smoke Tester 2.3.148",
+    "tag": "v2.3.149",
+    "name": "Smoke Tester 2.3.149",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.148",
-  "tag": "v2.3.148",
-  "releaseName": "Smoke Tester 2.3.148",
-  "notes": "Smoke Tester 2.3.148 keeps every generation and error record linked to the same phone profile when its nickname or avatar is edited. Twin Button and Fire Tester are unchanged.",
-  "assetName": "firmware-2.3.148.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.148/firmware-2.3.148.bin",
+  "version": "2.3.149",
+  "tag": "v2.3.149",
+  "releaseName": "Smoke Tester 2.3.149",
+  "notes": "Smoke Tester 2.3.149 stores whether each compact operator profile selected this tester, so another phone can show the same preferred-owner contour in generation and error history. Existing profile history remains intact. Twin Button and Fire Tester are unchanged.",
+  "assetName": "firmware-2.3.149.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.149/firmware-2.3.149.bin",
   "sizeBytes": 1305584,
-  "sha256": "9fbeb495607d5a8da1d2df6d7ca1174ceb62bacbf8e9bd55a30e2f6f8f892c3d",
+  "sha256": "f04fb69cf059feb9f2b570572dc141be5a06533f9a5a76c3961c8f41e91c5f96",
   "smokeTester": {
-    "version": "2.3.148",
-    "tag": "v2.3.148",
-    "releaseName": "Smoke Tester 2.3.148",
-    "assetName": "firmware-2.3.148.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.148/firmware-2.3.148.bin",
+    "version": "2.3.149",
+    "tag": "v2.3.149",
+    "releaseName": "Smoke Tester 2.3.149",
+    "assetName": "firmware-2.3.149.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.149/firmware-2.3.149.bin",
     "sizeBytes": 1305584,
-    "sha256": "9fbeb495607d5a8da1d2df6d7ca1174ceb62bacbf8e9bd55a30e2f6f8f892c3d"
+    "sha256": "f04fb69cf059feb9f2b570572dc141be5a06533f9a5a76c3961c8f41e91c5f96"
   },
   "twinButton": {
     "version": "1.1.58",
