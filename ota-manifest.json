@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.149",
-    "name": "Smoke Tester 2.3.149",
+    "tag": "v2.3.150",
+    "name": "Smoke Tester 2.3.150",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.149",
-  "tag": "v2.3.149",
-  "releaseName": "Smoke Tester 2.3.149",
-  "notes": "Smoke Tester 2.3.149 stores whether each compact operator profile selected this tester, so another phone can show the same preferred-owner contour in generation and error history. Existing profile history remains intact. Twin Button and Fire Tester are unchanged.",
-  "assetName": "firmware-2.3.149.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.149/firmware-2.3.149.bin",
-  "sizeBytes": 1305584,
-  "sha256": "f04fb69cf059feb9f2b570572dc141be5a06533f9a5a76c3961c8f41e91c5f96",
+  "version": "2.3.150",
+  "tag": "v2.3.150",
+  "releaseName": "Smoke Tester 2.3.150",
+  "notes": "Smoke Tester 2.3.150 adds an optional device-backed local-inspection archive. The phone can save one compact object with zones and completed detector results to Smoke Tester, and another user can read it later. Generation, Twin Button, and Fire Tester behavior are unchanged.",
+  "assetName": "firmware-2.3.150.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.150/firmware-2.3.150.bin",
+  "sizeBytes": 1308768,
+  "sha256": "a194b5c4f4bd9a0d0f183396e3b9acd8338eb747aad07d77d63ab0e13f4e5e2d",
   "smokeTester": {
-    "version": "2.3.149",
-    "tag": "v2.3.149",
-    "releaseName": "Smoke Tester 2.3.149",
-    "assetName": "firmware-2.3.149.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.149/firmware-2.3.149.bin",
-    "sizeBytes": 1305584,
-    "sha256": "f04fb69cf059feb9f2b570572dc141be5a06533f9a5a76c3961c8f41e91c5f96"
+    "version": "2.3.150",
+    "tag": "v2.3.150",
+    "releaseName": "Smoke Tester 2.3.150",
+    "assetName": "firmware-2.3.150.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.150/firmware-2.3.150.bin",
+    "sizeBytes": 1308768,
+    "sha256": "a194b5c4f4bd9a0d0f183396e3b9acd8338eb747aad07d77d63ab0e13f4e5e2d"
   },
   "twinButton": {
     "version": "1.1.58",
