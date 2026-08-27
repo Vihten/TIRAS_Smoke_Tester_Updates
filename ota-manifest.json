@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.155",
-    "name": "Smoke Tester 2.3.155",
+    "tag": "v2.3.156",
+    "name": "Smoke Tester 2.3.156",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.155",
-  "tag": "v2.3.155",
-  "releaseName": "Smoke Tester 2.3.155",
-  "notes": "Smoke Tester 2.3.155 prevents a brief VL53L0X/I2C interruption during generation from being published or stored as a distance-sensor fault. A genuine sustained sensor failure is still reported. Twin Button and Fire Tester behavior are unchanged.",
-  "assetName": "firmware-2.3.155.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.155/firmware-2.3.155.bin",
-  "sizeBytes": 1319744,
-  "sha256": "0c28c0b1e8a78cbcd3efd5982b492cb5f7671c6d3ad7b26dc427828124bf7273",
+  "version": "2.3.156",
+  "tag": "v2.3.156",
+  "releaseName": "Smoke Tester 2.3.156",
+  "notes": "Smoke Tester 2.3.156 keeps the IR sensor available while Bluetooth is connected and adds device-side IR enable/disable control for the service app. It no longer publishes a stored dry-cartridge state as a fresh no-liquid error after reboot: the next deliberate Start performs the existing bounded pump-off verification instead. Cartridge fault LEDs 3 and 4 now remain dark between error cues instead of leaking the green battery frame. Twin Button and Fire Tester behavior are unchanged.",
+  "assetName": "firmware-2.3.156.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.156/firmware-2.3.156.bin",
+  "sizeBytes": 1320320,
+  "sha256": "1f64c81b125de49215bc2d640a5f66b3eb9b468efa461e80de5d3346b13829d2",
   "smokeTester": {
-    "version": "2.3.155",
-    "tag": "v2.3.155",
-    "releaseName": "Smoke Tester 2.3.155",
-    "assetName": "firmware-2.3.155.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.155/firmware-2.3.155.bin",
-    "sizeBytes": 1319744,
-    "sha256": "0c28c0b1e8a78cbcd3efd5982b492cb5f7671c6d3ad7b26dc427828124bf7273"
+    "version": "2.3.156",
+    "tag": "v2.3.156",
+    "releaseName": "Smoke Tester 2.3.156",
+    "assetName": "firmware-2.3.156.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.156/firmware-2.3.156.bin",
+    "sizeBytes": 1320320,
+    "sha256": "1f64c81b125de49215bc2d640a5f66b3eb9b468efa461e80de5d3346b13829d2"
   },
   "twinButton": {
     "version": "1.1.58",
