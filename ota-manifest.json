@@ -1,28 +1,65 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.156",
-    "name": "Smoke Tester 2.3.156",
+    "tag": "v2.3.157",
+    "name": "Smoke Tester 2.3.157",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.156",
-  "tag": "v2.3.156",
-  "releaseName": "Smoke Tester 2.3.156",
-  "notes": "Smoke Tester 2.3.156 keeps the IR sensor available while Bluetooth is connected and adds device-side IR enable/disable control for the service app. It no longer publishes a stored dry-cartridge state as a fresh no-liquid error after reboot: the next deliberate Start performs the existing bounded pump-off verification instead. Cartridge fault LEDs 3 and 4 now remain dark between error cues instead of leaking the green battery frame. Twin Button and Fire Tester behavior are unchanged.",
-  "assetName": "firmware-2.3.156.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.156/firmware-2.3.156.bin",
-  "sizeBytes": 1320320,
-  "sha256": "1f64c81b125de49215bc2d640a5f66b3eb9b468efa461e80de5d3346b13829d2",
+  "version": "2.3.157",
+  "tag": "v2.3.157",
+  "releaseName": "Smoke Tester 2.3.157",
+  "notes": "Smoke Tester 2.3.157 automatically repeats the normal liquid verification after reboot when a dry cartridge is present, and reports battery percentage and cartridge resistance dynamically. The repository now also publishes a complete SHA-256-verified manufacturing flash plan.",
+  "assetName": "firmware-2.3.157.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.157/firmware-2.3.157.bin",
+  "sizeBytes": 1320992,
+  "sha256": "1924ac32ca4e0367736504e7854e671e6599403e2209c32fe9eabc34e0366d1d",
   "smokeTester": {
-    "version": "2.3.156",
-    "tag": "v2.3.156",
-    "releaseName": "Smoke Tester 2.3.156",
-    "assetName": "firmware-2.3.156.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.156/firmware-2.3.156.bin",
-    "sizeBytes": 1320320,
-    "sha256": "1f64c81b125de49215bc2d640a5f66b3eb9b468efa461e80de5d3346b13829d2"
+    "version": "2.3.157",
+    "tag": "v2.3.157",
+    "releaseName": "Smoke Tester 2.3.157",
+    "assetName": "firmware-2.3.157.bin",
+    "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.157/firmware-2.3.157.bin",
+    "sizeBytes": 1320992,
+    "sha256": "1924ac32ca4e0367736504e7854e671e6599403e2209c32fe9eabc34e0366d1d",
+    "flashPlan": [
+      {
+        "offset": "0x0",
+        "assetName": "bootloader.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.157/bootloader.bin",
+        "sizeBytes": 13248,
+        "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
+      },
+      {
+        "offset": "0x8000",
+        "assetName": "partitions.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.157/partitions.bin",
+        "sizeBytes": 3072,
+        "sha256": "e53d065cca98f5c60dabcb800fefa2625b2ac68c812b9a3ee7bd553571177728"
+      },
+      {
+        "offset": "0xE000",
+        "assetName": "boot_app0.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.157/boot_app0.bin",
+        "sizeBytes": 8192,
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+      },
+      {
+        "offset": "0x10000",
+        "assetName": "firmware-2.3.157.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.157/firmware-2.3.157.bin",
+        "sizeBytes": 1320992,
+        "sha256": "1924ac32ca4e0367736504e7854e671e6599403e2209c32fe9eabc34e0366d1d"
+      },
+      {
+        "offset": "0x3B0000",
+        "assetName": "spiffs.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.157/spiffs.bin",
+        "sizeBytes": 327680,
+        "sha256": "f231070cf480e64615d202772db3860755d74581d9e5929d0c1778e2d35e46cf"
+      }
+    ]
   },
   "twinButton": {
     "version": "1.1.58",
