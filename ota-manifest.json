@@ -1,28 +1,28 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.152",
-    "name": "Smoke Tester 2.3.152",
+    "tag": "v2.3.154",
+    "name": "Smoke Tester 2.3.154",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.152",
-  "tag": "v2.3.152",
-  "releaseName": "Smoke Tester 2.3.152",
-  "notes": "Smoke Tester 2.3.152 replaces sensitivity profiles with a fixed high-sensitivity solid-target classifier. Stable VL53L0X reflection telemetry rejects smoke-only echoes while preserving detector triggering. Twin Button and Fire Tester behavior are unchanged.",
-  "assetName": "firmware-2.3.152.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.152/firmware-2.3.152.bin",
-  "sizeBytes": 1310416,
-  "sha256": "a551be271f9b9bd83dd7ea9ccb94b189e7725f972d575ea0519b14aa5791635d",
+  "version": "2.3.154",
+  "tag": "v2.3.154",
+  "releaseName": "Smoke Tester 2.3.154",
+  "notes": "Smoke Tester 2.3.154 restores normal green indication, IR sensing and charge-state handling after generation, starts a replacement cartridge with a fresh launch counter, and counts every real 5-second cartridge output pulse exactly once. Twin Button and Fire Tester behavior are unchanged.",
+  "assetName": "firmware-2.3.154.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.154/firmware-2.3.154.bin",
+  "sizeBytes": 1319584,
+  "sha256": "bb698a8d8dc77d864b77072bb77694c6bc5cf2a92e4f9c57a951f6fade164ff1",
   "smokeTester": {
-    "version": "2.3.152",
-    "tag": "v2.3.152",
-    "releaseName": "Smoke Tester 2.3.152",
-    "assetName": "firmware-2.3.152.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.152/firmware-2.3.152.bin",
-    "sizeBytes": 1310416,
-    "sha256": "a551be271f9b9bd83dd7ea9ccb94b189e7725f972d575ea0519b14aa5791635d"
+    "version": "2.3.154",
+    "tag": "v2.3.154",
+    "releaseName": "Smoke Tester 2.3.154",
+    "assetName": "firmware-2.3.154.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.154/firmware-2.3.154.bin",
+    "sizeBytes": 1319584,
+    "sha256": "bb698a8d8dc77d864b77072bb77694c6bc5cf2a92e4f9c57a951f6fade164ff1"
   },
   "twinButton": {
     "version": "1.1.58",
