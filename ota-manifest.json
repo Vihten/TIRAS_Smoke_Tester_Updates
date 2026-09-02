@@ -12,7 +12,7 @@
   "releaseName": "Smoke Tester 2.3.181",
   "notes": "Smoke Tester 2.3.181 restores the single-press battery preview, rejects invalid or load-distorted ADC readings, keeps the BLE charge percentage stable, and reports an unavailable measurement as -- instead of a false 0%.",
   "assetName": "firmware-2.3.181.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.181/firmware-2.3.181.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.181/firmware-2.3.181.bin",
   "sizeBytes": 1519904,
   "sha256": "b3a6bdd7e6b5fc6c22d49eef44a957690031307bb83b5c37169e865a597083b8",
   "smokeTester": {
@@ -20,7 +20,7 @@
     "tag": "v2.3.181",
     "releaseName": "Smoke Tester 2.3.181",
     "assetName": "firmware-2.3.181.bin",
-    "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.181/firmware-2.3.181.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.181/firmware-2.3.181.bin",
     "sizeBytes": 1519904,
     "sha256": "b3a6bdd7e6b5fc6c22d49eef44a957690031307bb83b5c37169e865a597083b8",
     "flashPlan": [
@@ -48,7 +48,7 @@
       {
         "offset": "0x10000",
         "assetName": "firmware-2.3.181.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.181/firmware-2.3.181.bin",
+        "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.181/firmware-2.3.181.bin",
         "sizeBytes": 1519904,
         "sha256": "b3a6bdd7e6b5fc6c22d49eef44a957690031307bb83b5c37169e865a597083b8"
       },
