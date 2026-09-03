@@ -1,61 +1,61 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.182",
-    "name": "Smoke Tester 2.3.182",
+    "tag": "v2.3.183",
+    "name": "Smoke Tester 2.3.183",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.182",
-  "tag": "v2.3.182",
-  "releaseName": "Smoke Tester 2.3.182",
-  "notes": "Smoke Tester 2.3.182 observes the full five-second thermal curve during automatic liquid verification, preventing residual wick moisture in a nearly dry cartridge from being accepted before the late dry-resistance rise appears.",
-  "assetName": "firmware-2.3.182.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.182/firmware-2.3.182.bin",
-  "sizeBytes": 1521248,
-  "sha256": "1560ac366d979428f1d00892fe03ba99b4fe44fb376ac4f0b53168545196f34d",
+  "version": "2.3.183",
+  "tag": "v2.3.183",
+  "releaseName": "Smoke Tester 2.3.183",
+  "notes": "Smoke Tester 2.3.183 combines electrical resistance wear with the number of dry generation cycles when calculating cartridge quality. New cartridge sessions are detected automatically, and their launch counter and resistance history start from zero without requiring a manual reset in the phone app.",
+  "assetName": "firmware-2.3.183.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.183/firmware-2.3.183.bin",
+  "sizeBytes": 1521344,
+  "sha256": "f0ff18c46f8930d746b50a1b5c5dee189fa74f8812cfbd70c506ea25e81a76d1",
   "smokeTester": {
-    "version": "2.3.182",
-    "tag": "v2.3.182",
-    "releaseName": "Smoke Tester 2.3.182",
-    "assetName": "firmware-2.3.182.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.182/firmware-2.3.182.bin",
-    "sizeBytes": 1521248,
-    "sha256": "1560ac366d979428f1d00892fe03ba99b4fe44fb376ac4f0b53168545196f34d",
+    "version": "2.3.183",
+    "tag": "v2.3.183",
+    "releaseName": "Smoke Tester 2.3.183",
+    "assetName": "firmware-2.3.183.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.183/firmware-2.3.183.bin",
+    "sizeBytes": 1521344,
+    "sha256": "f0ff18c46f8930d746b50a1b5c5dee189fa74f8812cfbd70c506ea25e81a76d1",
     "flashPlan": [
       {
         "offset": "0x0",
         "assetName": "bootloader.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.182/bootloader.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.183/bootloader.bin",
         "sizeBytes": 13248,
         "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
       },
       {
         "offset": "0x8000",
         "assetName": "partitions.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.182/partitions.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.183/partitions.bin",
         "sizeBytes": 3072,
         "sha256": "e53d065cca98f5c60dabcb800fefa2625b2ac68c812b9a3ee7bd553571177728"
       },
       {
         "offset": "0xE000",
         "assetName": "boot_app0.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.182/boot_app0.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.183/boot_app0.bin",
         "sizeBytes": 8192,
         "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
       },
       {
         "offset": "0x10000",
-        "assetName": "firmware-2.3.182.bin",
-        "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.182/firmware-2.3.182.bin",
-        "sizeBytes": 1521248,
-        "sha256": "1560ac366d979428f1d00892fe03ba99b4fe44fb376ac4f0b53168545196f34d"
+        "assetName": "firmware-2.3.183.bin",
+        "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.183/firmware-2.3.183.bin",
+        "sizeBytes": 1521344,
+        "sha256": "f0ff18c46f8930d746b50a1b5c5dee189fa74f8812cfbd70c506ea25e81a76d1"
       },
       {
         "offset": "0x3B0000",
         "assetName": "spiffs.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.182/spiffs.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.183/spiffs.bin",
         "sizeBytes": 327680,
         "sha256": "f231070cf480e64615d202772db3860755d74581d9e5929d0c1778e2d35e46cf"
       }
