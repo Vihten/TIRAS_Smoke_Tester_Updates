@@ -12,7 +12,7 @@
   "releaseName": "Smoke Tester 2.3.199",
   "notes": "Version-only release of Smoke Tester 2.3.198 for testing automatic Wi-Fi OTA while charging. Runtime behavior is unchanged.",
   "assetName": "firmware-2.3.199.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.199/firmware-2.3.199.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.199/firmware-2.3.199.bin",
   "sizeBytes": 1529104,
   "sha256": "56cf831444f0d11d92f975d83276281c1963fbe9fe4f6546b37e216cebd8ebf7",
   "smokeTester": {
@@ -20,7 +20,7 @@
     "tag": "v2.3.199",
     "releaseName": "Smoke Tester 2.3.199",
     "assetName": "firmware-2.3.199.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.199/firmware-2.3.199.bin",
+    "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.199/firmware-2.3.199.bin",
     "sizeBytes": 1529104,
     "sha256": "56cf831444f0d11d92f975d83276281c1963fbe9fe4f6546b37e216cebd8ebf7",
     "flashPlan": [
@@ -48,7 +48,7 @@
       {
         "offset": "0x10000",
         "assetName": "firmware-2.3.199.bin",
-        "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.199/firmware-2.3.199.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.199/firmware-2.3.199.bin",
         "sizeBytes": 1529104,
         "sha256": "56cf831444f0d11d92f975d83276281c1963fbe9fe4f6546b37e216cebd8ebf7"
       },
