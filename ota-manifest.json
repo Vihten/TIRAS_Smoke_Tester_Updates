@@ -1,61 +1,61 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v2.3.193",
-    "name": "Smoke Tester 2.3.193",
+    "tag": "v2.3.194",
+    "name": "Smoke Tester 2.3.194",
     "components": [
       "smokeTester"
     ]
   },
-  "version": "2.3.193",
-  "tag": "v2.3.193",
-  "releaseName": "Smoke Tester 2.3.193",
-  "notes": "Smoke Tester 2.3.193 is a version-only release of the current firmware state for validating automatic Wi-Fi OTA while the device is charging. Runtime behavior is unchanged.",
-  "assetName": "firmware-2.3.193.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.193/firmware-2.3.193.bin",
-  "sizeBytes": 1529648,
-  "sha256": "9e6a7709b53ad6c631cecc45455997d7a79736ded8aa61d234d1cdd3317068fb",
+  "version": "2.3.194",
+  "tag": "v2.3.194",
+  "releaseName": "Smoke Tester 2.3.194",
+  "notes": "Fix automatic Wi-Fi OTA on charge when NimBLE cleanup fails after every live BLE owner has already been released. Active BLE sessions remain protected from concurrent Wi-Fi startup.",
+  "assetName": "firmware-2.3.194.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.194/firmware-2.3.194.bin",
+  "sizeBytes": 1530464,
+  "sha256": "e74e0d41ea0800622f0be17bb98d4b0272c61f5eabedc625db2a56864a3a2fe2",
   "smokeTester": {
-    "version": "2.3.193",
-    "tag": "v2.3.193",
-    "releaseName": "Smoke Tester 2.3.193",
-    "assetName": "firmware-2.3.193.bin",
-    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.193/firmware-2.3.193.bin",
-    "sizeBytes": 1529648,
-    "sha256": "9e6a7709b53ad6c631cecc45455997d7a79736ded8aa61d234d1cdd3317068fb",
+    "version": "2.3.194",
+    "tag": "v2.3.194",
+    "releaseName": "Smoke Tester 2.3.194",
+    "assetName": "firmware-2.3.194.bin",
+    "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.194/firmware-2.3.194.bin",
+    "sizeBytes": 1530464,
+    "sha256": "e74e0d41ea0800622f0be17bb98d4b0272c61f5eabedc625db2a56864a3a2fe2",
     "flashPlan": [
       {
         "offset": "0x0",
         "assetName": "bootloader.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.193/bootloader.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.194/bootloader.bin",
         "sizeBytes": 13248,
         "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
       },
       {
         "offset": "0x8000",
         "assetName": "partitions.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.193/partitions.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.194/partitions.bin",
         "sizeBytes": 3072,
         "sha256": "e53d065cca98f5c60dabcb800fefa2625b2ac68c812b9a3ee7bd553571177728"
       },
       {
         "offset": "0xE000",
         "assetName": "boot_app0.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.193/boot_app0.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.194/boot_app0.bin",
         "sizeBytes": 8192,
         "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
       },
       {
         "offset": "0x10000",
-        "assetName": "firmware-2.3.193.bin",
-        "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.193/firmware-2.3.193.bin",
-        "sizeBytes": 1529648,
-        "sha256": "9e6a7709b53ad6c631cecc45455997d7a79736ded8aa61d234d1cdd3317068fb"
+        "assetName": "firmware-2.3.194.bin",
+        "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/v2.3.194/firmware-2.3.194.bin",
+        "sizeBytes": 1530464,
+        "sha256": "e74e0d41ea0800622f0be17bb98d4b0272c61f5eabedc625db2a56864a3a2fe2"
       },
       {
         "offset": "0x3B0000",
         "assetName": "spiffs.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.193/spiffs.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/main/release-assets/v2.3.194/spiffs.bin",
         "sizeBytes": 327680,
         "sha256": "f231070cf480e64615d202772db3860755d74581d9e5929d0c1778e2d35e46cf"
       }
