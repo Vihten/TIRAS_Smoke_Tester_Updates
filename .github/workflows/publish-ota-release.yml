@@ -32,6 +32,10 @@ jobs:
           release_notes="$(jq -r '.notes' ota-manifest.json)"
           asset_dir="release-assets/${release_tag}"
           checksums="${asset_dir}/SHA256SUMS.txt"
+          release_flags=(--latest)
+          if [[ "${release_tag}" == *b ]]; then
+            release_flags=(--prerelease --latest=false)
+          fi
 
           test "${manifest_release_tag}" = "${release_tag}"
           test -s "${checksums}"
@@ -47,6 +51,14 @@ jobs:
           for component in "${components[@]}"; do
             case "${component}" in
               smokeTester)
+                mapfile -t smoke_assets < <(jq -r '.smokeTester.flashPlan[]?.assetName' ota-manifest.json)
+                if [[ "${#smoke_assets[@]}" -gt 0 ]]; then
+                  for smoke_asset in "${smoke_assets[@]}"; do
+                    test -s "${asset_dir}/${smoke_asset}"
+                    assets+=("${asset_dir}/${smoke_asset}")
+                  done
+                  continue
+                fi
                 asset_name="$(jq -r '.smokeTester.assetName // .assetName' ota-manifest.json)"
                 ;;
               twinButton)
@@ -85,14 +97,14 @@ jobs:
               --clobber
             gh release edit "${release_tag}" \
               --repo "${GITHUB_REPOSITORY}" \
-              --latest \
+              "${release_flags[@]}" \
               --title "${release_name}" \
               --notes "${release_notes}"
           else
             gh release create "${release_tag}" "${assets[@]}" \
               --repo "${GITHUB_REPOSITORY}" \
               --verify-tag \
-              --latest \
+              "${release_flags[@]}" \
               --title "${release_name}" \
               --notes "${release_notes}"
           fi
