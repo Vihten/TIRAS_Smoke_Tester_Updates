@@ -10,18 +10,18 @@
   },
   "notes": "Smoke Tester 2.2.15b (бета).\n- Оновлення по Wi-Fi під час зарядки знову працює: прилад перевіряє та завантажує прошивку з GitHub.\n- Під час вимкнення в режимі пошуку Bluetooth анімація пошуку не зупиняється, а плавно згасає.\n- Під час підключення зарядки світлодіоди стану плавно згасають, а індикація заряду плавно засвічується.\n- Після аварійного перезапуску прилад зберігає останні події в журнал діагностики.",
   "twinButton": {
-    "version": "1.1.59",
+    "version": "1.1.90",
     "bin": {
-      "assetName": "twin-button-1.1.59.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.59/twin-button-1.1.59.bin",
-      "sizeBytes": 169556,
-      "sha256": "4233fe639c86c643e9f3fc5f4d0901ec3485ae012d9d1f47975e0ddf4dff3296"
+      "assetName": "twin-button-1.1.90.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.90/twin-button-1.1.90.bin",
+      "sizeBytes": 221104,
+      "sha256": "cc12af5def6a6d862796473bee98562d6ba45a669a96639b5a96d7275500590e"
     },
     "dat": {
-      "assetName": "twin-button-1.1.59.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.59/twin-button-1.1.59.dat",
+      "assetName": "twin-button-1.1.90.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.90/twin-button-1.1.90.dat",
       "sizeBytes": 14,
-      "sha256": "253761de9d6b7dcd81479df60b0c8814519e1fb6a1300d58e07fc73192c2b024"
+      "sha256": "fdc09030f37a132c4c8285fb0a19d1ec62924e9d4745e1e22cc6443fa020cc55"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
