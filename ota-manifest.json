@@ -10,18 +10,18 @@
   },
   "notes": "Smoke Tester 2.2.17b (бета).\n- Пакет прошивки Twin Button прилад тепер завантажує сам по Wi-Fi під час зарядки, а не лише з телефона по Bluetooth.\n- Поки телефон передає пакет Twin Button, прилад показує ту саму індикацію оновлення з прогресом, що й під час власного оновлення.",
   "twinButton": {
-    "version": "1.1.91",
+    "version": "1.1.92",
     "bin": {
-      "assetName": "twin-button-1.1.91.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.91/twin-button-1.1.91.bin",
+      "assetName": "twin-button-1.1.92.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.92/twin-button-1.1.92.bin",
       "sizeBytes": 221104,
-      "sha256": "4d024d318ed24e663daac6131e21ddf336988af766593ba0f466cf45ec1c7bfe"
+      "sha256": "e433df59bb961153a4106b301563af65b4abe374168321745a066bb51fb7cf75"
     },
     "dat": {
-      "assetName": "twin-button-1.1.91.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.91/twin-button-1.1.91.dat",
+      "assetName": "twin-button-1.1.92.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.92/twin-button-1.1.92.dat",
       "sizeBytes": 14,
-      "sha256": "29ff7882e5034aabcdf5a790aa533112fd00e1db73ac8d0366ddab1d5ec19949"
+      "sha256": "c997e6143401a0d784a0fba5166f55983f7eb933f26195db51d1604ed2468647"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
