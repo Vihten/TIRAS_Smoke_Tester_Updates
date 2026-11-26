@@ -10,18 +10,18 @@
   },
   "notes": "Smoke Tester 2.2.19b (бета).\n- Пакет прошивки Twin Button тепер справді завантажується по Wi-Fi на зарядці: прилад перезапускається, щоб завантажити його на чистій пам'яті, і перевіряє збережений пакет за контрольними сумами.\n- Якщо прилад поставили на зарядку після роботи з телефоном і йому бракує пам'яті для перевірки оновлень, він один раз перезапускається і перевіряє знову.",
   "twinButton": {
-    "version": "1.1.92",
+    "version": "1.1.93",
     "bin": {
-      "assetName": "twin-button-1.1.92.bin",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.92/twin-button-1.1.92.bin",
+      "assetName": "twin-button-1.1.93.bin",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.93/twin-button-1.1.93.bin",
       "sizeBytes": 221104,
-      "sha256": "e433df59bb961153a4106b301563af65b4abe374168321745a066bb51fb7cf75"
+      "sha256": "b6b67f629e053e18813e9083be751e698c86ee58adada2b046ea4c40702435ce"
     },
     "dat": {
-      "assetName": "twin-button-1.1.92.dat",
-      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.92/twin-button-1.1.92.dat",
+      "assetName": "twin-button-1.1.93.dat",
+      "downloadUrl": "https://github.com/Vihten/TIRAS_Smoke_Tester_Updates/releases/download/twin-v1.1.93/twin-button-1.1.93.dat",
       "sizeBytes": 14,
-      "sha256": "c997e6143401a0d784a0fba5166f55983f7eb933f26195db51d1604ed2468647"
+      "sha256": "7f293f07bd7401f504bedf70aeb0712d6fb68acc847625275505cca8a8b3834f"
     },
     "bootloader": {
       "version": "0.11.0-tiras24-erase-hold",
