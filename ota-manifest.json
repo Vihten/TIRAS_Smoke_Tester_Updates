@@ -1,14 +1,14 @@
 {
   "release": {
-    "tag": "v2.2.19b",
-    "name": "Smoke Tester 2.2.19b",
+    "tag": "v2.2.20b",
+    "name": "Smoke Tester 2.2.20b",
     "components": [
       "smokeTester",
       "twinButton",
       "twinBootloader"
     ]
   },
-  "notes": "Smoke Tester 2.2.19b (бета).\n- Пакет прошивки Twin Button тепер справді завантажується по Wi-Fi на зарядці: прилад перезапускається, щоб завантажити його на чистій пам'яті, і перевіряє збережений пакет за контрольними сумами.\n- Якщо прилад поставили на зарядку після роботи з телефоном і йому бракує пам'яті для перевірки оновлень, він один раз перезапускається і перевіряє знову.",
+  "notes": "Smoke Tester 2.2.20b (бета).\n- Пакет прошивки Twin Button, завантажений по Wi-Fi, тепер записується повністю: раніше файл міг вийти коротшим, і прилад відкидав його.\n- Збережений пакет перечитується і звіряється за контрольними сумами перед тим, як потрапити на Twin Button.",
   "twinButton": {
     "version": "1.1.93",
     "bin": {
@@ -32,96 +32,96 @@
       "installation": "one-time-usb-uf2"
     }
   },
-  "version": "2.2.19b",
-  "tag": "v2.2.19b",
-  "releaseName": "Smoke Tester 2.2.19b",
-  "assetName": "firmware-2.2.19b.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/firmware-2.2.19b.bin",
-  "sizeBytes": 1553904,
-  "sha256": "a0d70147e0a76f85995e7d8ee70eff7e63cfdcf09bd08ce34ccf20566f8ee63f",
+  "version": "2.2.20b",
+  "tag": "v2.2.20b",
+  "releaseName": "Smoke Tester 2.2.20b",
+  "assetName": "firmware-2.2.20b.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/firmware-2.2.20b.bin",
+  "sizeBytes": 1553600,
+  "sha256": "4c393af395aab0f8e367b6fcf432fb624fe945dec540126ea143f3f128c3073a",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/bootloader.bin",
       "sizeBytes": 13248,
       "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "e7b020b1aebdeb1f5e49770080c1d45aa1a79c4b4d468a309b3a8f6fc5039ae2"
     },
     {
       "offset": "0xE000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x10000",
-      "assetName": "firmware-2.2.19b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/firmware-2.2.19b.bin",
-      "sizeBytes": 1553904,
-      "sha256": "a0d70147e0a76f85995e7d8ee70eff7e63cfdcf09bd08ce34ccf20566f8ee63f"
+      "assetName": "firmware-2.2.20b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/firmware-2.2.20b.bin",
+      "sizeBytes": 1553600,
+      "sha256": "4c393af395aab0f8e367b6fcf432fb624fe945dec540126ea143f3f128c3073a"
     },
     {
       "offset": "0x370000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/spiffs.bin",
       "sizeBytes": 589824,
       "sha256": "52058319aae94f982b7d476297af7284393eafc43c0e471293a3e52798c72f81"
     }
   ],
   "smokeTester": {
-    "version": "2.2.19b",
-    "tag": "v2.2.19b",
-    "releaseName": "Smoke Tester 2.2.19b",
-    "assetName": "firmware-2.2.19b.bin",
-    "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/firmware-2.2.19b.bin",
-    "sizeBytes": 1553904,
-    "sha256": "a0d70147e0a76f85995e7d8ee70eff7e63cfdcf09bd08ce34ccf20566f8ee63f",
+    "version": "2.2.20b",
+    "tag": "v2.2.20b",
+    "releaseName": "Smoke Tester 2.2.20b",
+    "assetName": "firmware-2.2.20b.bin",
+    "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/firmware-2.2.20b.bin",
+    "sizeBytes": 1553600,
+    "sha256": "4c393af395aab0f8e367b6fcf432fb624fe945dec540126ea143f3f128c3073a",
     "flashPlan": [
       {
         "offset": "0x0",
         "assetName": "bootloader.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/bootloader.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/bootloader.bin",
         "sizeBytes": 13248,
         "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
       },
       {
         "offset": "0x8000",
         "assetName": "partitions.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/partitions.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/partitions.bin",
         "sizeBytes": 3072,
         "sha256": "e7b020b1aebdeb1f5e49770080c1d45aa1a79c4b4d468a309b3a8f6fc5039ae2"
       },
       {
         "offset": "0xE000",
         "assetName": "boot_app0.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/boot_app0.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/boot_app0.bin",
         "sizeBytes": 8192,
         "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
       },
       {
         "offset": "0x10000",
-        "assetName": "firmware-2.2.19b.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/firmware-2.2.19b.bin",
-        "sizeBytes": 1553904,
-        "sha256": "a0d70147e0a76f85995e7d8ee70eff7e63cfdcf09bd08ce34ccf20566f8ee63f"
+        "assetName": "firmware-2.2.20b.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/firmware-2.2.20b.bin",
+        "sizeBytes": 1553600,
+        "sha256": "4c393af395aab0f8e367b6fcf432fb624fe945dec540126ea143f3f128c3073a"
       },
       {
         "offset": "0x370000",
         "assetName": "spiffs.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/spiffs.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/spiffs.bin",
         "sizeBytes": 589824,
         "sha256": "52058319aae94f982b7d476297af7284393eafc43c0e471293a3e52798c72f81"
       }
     ],
-    "notes": "Smoke Tester 2.2.19b (бета).\n- Пакет прошивки Twin Button тепер справді завантажується по Wi-Fi на зарядці: прилад перезапускається, щоб завантажити його на чистій пам'яті, і перевіряє збережений пакет за контрольними сумами.\n- Якщо прилад поставили на зарядку після роботи з телефоном і йому бракує пам'яті для перевірки оновлень, він один раз перезапускається і перевіряє знову."
+    "notes": "Smoke Tester 2.2.20b (бета).\n- Пакет прошивки Twin Button, завантажений по Wi-Fi, тепер записується повністю: раніше файл міг вийти коротшим, і прилад відкидав його.\n- Збережений пакет перечитується і звіряється за контрольними сумами перед тим, як потрапити на Twin Button."
   },
   "migration": {
     "id": "beta-renumber-20261006",
@@ -394,51 +394,51 @@
   "channels": {
     "stable": null,
     "beta": {
-      "version": "2.2.19b",
-      "tag": "v2.2.19b",
-      "releaseName": "Smoke Tester 2.2.19b",
-      "assetName": "firmware-2.2.19b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/firmware-2.2.19b.bin",
-      "sizeBytes": 1553904,
-      "sha256": "a0d70147e0a76f85995e7d8ee70eff7e63cfdcf09bd08ce34ccf20566f8ee63f",
+      "version": "2.2.20b",
+      "tag": "v2.2.20b",
+      "releaseName": "Smoke Tester 2.2.20b",
+      "assetName": "firmware-2.2.20b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/firmware-2.2.20b.bin",
+      "sizeBytes": 1553600,
+      "sha256": "4c393af395aab0f8e367b6fcf432fb624fe945dec540126ea143f3f128c3073a",
       "flashPlan": [
         {
           "offset": "0x0",
           "assetName": "bootloader.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/bootloader.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/bootloader.bin",
           "sizeBytes": 13248,
           "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
         },
         {
           "offset": "0x8000",
           "assetName": "partitions.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/partitions.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/partitions.bin",
           "sizeBytes": 3072,
           "sha256": "e7b020b1aebdeb1f5e49770080c1d45aa1a79c4b4d468a309b3a8f6fc5039ae2"
         },
         {
           "offset": "0xE000",
           "assetName": "boot_app0.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/boot_app0.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/boot_app0.bin",
           "sizeBytes": 8192,
           "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
         },
         {
           "offset": "0x10000",
-          "assetName": "firmware-2.2.19b.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/firmware-2.2.19b.bin",
-          "sizeBytes": 1553904,
-          "sha256": "a0d70147e0a76f85995e7d8ee70eff7e63cfdcf09bd08ce34ccf20566f8ee63f"
+          "assetName": "firmware-2.2.20b.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/firmware-2.2.20b.bin",
+          "sizeBytes": 1553600,
+          "sha256": "4c393af395aab0f8e367b6fcf432fb624fe945dec540126ea143f3f128c3073a"
         },
         {
           "offset": "0x370000",
           "assetName": "spiffs.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.19b/release-assets/v2.2.19b/spiffs.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.20b/release-assets/v2.2.20b/spiffs.bin",
           "sizeBytes": 589824,
           "sha256": "52058319aae94f982b7d476297af7284393eafc43c0e471293a3e52798c72f81"
         }
       ],
-      "notes": "Smoke Tester 2.2.19b (бета).\n- Пакет прошивки Twin Button тепер справді завантажується по Wi-Fi на зарядці: прилад перезапускається, щоб завантажити його на чистій пам'яті, і перевіряє збережений пакет за контрольними сумами.\n- Якщо прилад поставили на зарядку після роботи з телефоном і йому бракує пам'яті для перевірки оновлень, він один раз перезапускається і перевіряє знову."
+      "notes": "Smoke Tester 2.2.20b (бета).\n- Пакет прошивки Twin Button, завантажений по Wi-Fi, тепер записується повністю: раніше файл міг вийти коротшим, і прилад відкидав його.\n- Збережений пакет перечитується і звіряється за контрольними сумами перед тим, як потрапити на Twin Button."
     }
   },
   "schema": 3,
