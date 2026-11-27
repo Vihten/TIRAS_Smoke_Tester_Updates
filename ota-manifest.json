@@ -1,14 +1,14 @@
 {
   "release": {
-    "tag": "v2.2.22b",
-    "name": "Smoke Tester 2.2.22b",
+    "tag": "v2.2.23b",
+    "name": "Smoke Tester 2.2.23b",
     "components": [
       "smokeTester",
       "twinButton",
       "twinBootloader"
     ]
   },
-  "notes": "Smoke Tester 2.2.22b (бета).\n- Якщо акумулятор вийшов із холдера, прилад на зарядці одразу це визначає: нижній індикатор постійно блимає червоним, вмикається пошук Bluetooth, а застосунок показує помилку й відео, як це виправити.\n- Без акумулятора прилад не запускає оновлення по Wi-Fi.\n- Якщо застосунок закрили, прилад сам відновлює пошук, щоб його можна було знайти знову.",
+  "notes": "Smoke Tester 2.2.23b (бета).\n- Без акумулятора прилад після будь-якого від'єднання сам знову вмикає пошук Bluetooth.\n- Якщо вставити акумулятор назад, поки прилад на зарядці, червоне блимання зникає, з'являється звичайна індикація заряду, а застосунок без перепідключення показує, що помилку усунено.",
   "twinButton": {
     "version": "1.1.93",
     "bin": {
@@ -32,96 +32,96 @@
       "installation": "one-time-usb-uf2"
     }
   },
-  "version": "2.2.22b",
-  "tag": "v2.2.22b",
-  "releaseName": "Smoke Tester 2.2.22b",
-  "assetName": "firmware-2.2.22b.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/firmware-2.2.22b.bin",
-  "sizeBytes": 1555376,
-  "sha256": "d54b24a13dc9561c7e883782591f93981b62f3e0975013f32fe1e86d420d8095",
+  "version": "2.2.23b",
+  "tag": "v2.2.23b",
+  "releaseName": "Smoke Tester 2.2.23b",
+  "assetName": "firmware-2.2.23b.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/firmware-2.2.23b.bin",
+  "sizeBytes": 1555776,
+  "sha256": "b82be6e00b59ce9ffb588824648c178ac7e8636bf2c92e7dedfbf5e5e3076c0e",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/bootloader.bin",
       "sizeBytes": 13248,
       "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "e7b020b1aebdeb1f5e49770080c1d45aa1a79c4b4d468a309b3a8f6fc5039ae2"
     },
     {
       "offset": "0xE000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x10000",
-      "assetName": "firmware-2.2.22b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/firmware-2.2.22b.bin",
-      "sizeBytes": 1555376,
-      "sha256": "d54b24a13dc9561c7e883782591f93981b62f3e0975013f32fe1e86d420d8095"
+      "assetName": "firmware-2.2.23b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/firmware-2.2.23b.bin",
+      "sizeBytes": 1555776,
+      "sha256": "b82be6e00b59ce9ffb588824648c178ac7e8636bf2c92e7dedfbf5e5e3076c0e"
     },
     {
       "offset": "0x370000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/spiffs.bin",
       "sizeBytes": 589824,
       "sha256": "52058319aae94f982b7d476297af7284393eafc43c0e471293a3e52798c72f81"
     }
   ],
   "smokeTester": {
-    "version": "2.2.22b",
-    "tag": "v2.2.22b",
-    "releaseName": "Smoke Tester 2.2.22b",
-    "assetName": "firmware-2.2.22b.bin",
-    "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/firmware-2.2.22b.bin",
-    "sizeBytes": 1555376,
-    "sha256": "d54b24a13dc9561c7e883782591f93981b62f3e0975013f32fe1e86d420d8095",
+    "version": "2.2.23b",
+    "tag": "v2.2.23b",
+    "releaseName": "Smoke Tester 2.2.23b",
+    "assetName": "firmware-2.2.23b.bin",
+    "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/firmware-2.2.23b.bin",
+    "sizeBytes": 1555776,
+    "sha256": "b82be6e00b59ce9ffb588824648c178ac7e8636bf2c92e7dedfbf5e5e3076c0e",
     "flashPlan": [
       {
         "offset": "0x0",
         "assetName": "bootloader.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/bootloader.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/bootloader.bin",
         "sizeBytes": 13248,
         "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
       },
       {
         "offset": "0x8000",
         "assetName": "partitions.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/partitions.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/partitions.bin",
         "sizeBytes": 3072,
         "sha256": "e7b020b1aebdeb1f5e49770080c1d45aa1a79c4b4d468a309b3a8f6fc5039ae2"
       },
       {
         "offset": "0xE000",
         "assetName": "boot_app0.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/boot_app0.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/boot_app0.bin",
         "sizeBytes": 8192,
         "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
       },
       {
         "offset": "0x10000",
-        "assetName": "firmware-2.2.22b.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/firmware-2.2.22b.bin",
-        "sizeBytes": 1555376,
-        "sha256": "d54b24a13dc9561c7e883782591f93981b62f3e0975013f32fe1e86d420d8095"
+        "assetName": "firmware-2.2.23b.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/firmware-2.2.23b.bin",
+        "sizeBytes": 1555776,
+        "sha256": "b82be6e00b59ce9ffb588824648c178ac7e8636bf2c92e7dedfbf5e5e3076c0e"
       },
       {
         "offset": "0x370000",
         "assetName": "spiffs.bin",
-        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/spiffs.bin",
+        "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/spiffs.bin",
         "sizeBytes": 589824,
         "sha256": "52058319aae94f982b7d476297af7284393eafc43c0e471293a3e52798c72f81"
       }
     ],
-    "notes": "Smoke Tester 2.2.22b (бета).\n- Якщо акумулятор вийшов із холдера, прилад на зарядці одразу це визначає: нижній індикатор постійно блимає червоним, вмикається пошук Bluetooth, а застосунок показує помилку й відео, як це виправити.\n- Без акумулятора прилад не запускає оновлення по Wi-Fi.\n- Якщо застосунок закрили, прилад сам відновлює пошук, щоб його можна було знайти знову."
+    "notes": "Smoke Tester 2.2.23b (бета).\n- Без акумулятора прилад після будь-якого від'єднання сам знову вмикає пошук Bluetooth.\n- Якщо вставити акумулятор назад, поки прилад на зарядці, червоне блимання зникає, з'являється звичайна індикація заряду, а застосунок без перепідключення показує, що помилку усунено."
   },
   "migration": {
     "id": "beta-renumber-20261006",
@@ -394,51 +394,51 @@
   "channels": {
     "stable": null,
     "beta": {
-      "version": "2.2.22b",
-      "tag": "v2.2.22b",
-      "releaseName": "Smoke Tester 2.2.22b",
-      "assetName": "firmware-2.2.22b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/firmware-2.2.22b.bin",
-      "sizeBytes": 1555376,
-      "sha256": "d54b24a13dc9561c7e883782591f93981b62f3e0975013f32fe1e86d420d8095",
+      "version": "2.2.23b",
+      "tag": "v2.2.23b",
+      "releaseName": "Smoke Tester 2.2.23b",
+      "assetName": "firmware-2.2.23b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/firmware-2.2.23b.bin",
+      "sizeBytes": 1555776,
+      "sha256": "b82be6e00b59ce9ffb588824648c178ac7e8636bf2c92e7dedfbf5e5e3076c0e",
       "flashPlan": [
         {
           "offset": "0x0",
           "assetName": "bootloader.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/bootloader.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/bootloader.bin",
           "sizeBytes": 13248,
           "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
         },
         {
           "offset": "0x8000",
           "assetName": "partitions.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/partitions.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/partitions.bin",
           "sizeBytes": 3072,
           "sha256": "e7b020b1aebdeb1f5e49770080c1d45aa1a79c4b4d468a309b3a8f6fc5039ae2"
         },
         {
           "offset": "0xE000",
           "assetName": "boot_app0.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/boot_app0.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/boot_app0.bin",
           "sizeBytes": 8192,
           "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
         },
         {
           "offset": "0x10000",
-          "assetName": "firmware-2.2.22b.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/firmware-2.2.22b.bin",
-          "sizeBytes": 1555376,
-          "sha256": "d54b24a13dc9561c7e883782591f93981b62f3e0975013f32fe1e86d420d8095"
+          "assetName": "firmware-2.2.23b.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/firmware-2.2.23b.bin",
+          "sizeBytes": 1555776,
+          "sha256": "b82be6e00b59ce9ffb588824648c178ac7e8636bf2c92e7dedfbf5e5e3076c0e"
         },
         {
           "offset": "0x370000",
           "assetName": "spiffs.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.22b/release-assets/v2.2.22b/spiffs.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Smoke_Tester_Updates/v2.2.23b/release-assets/v2.2.23b/spiffs.bin",
           "sizeBytes": 589824,
           "sha256": "52058319aae94f982b7d476297af7284393eafc43c0e471293a3e52798c72f81"
         }
       ],
-      "notes": "Smoke Tester 2.2.22b (бета).\n- Якщо акумулятор вийшов із холдера, прилад на зарядці одразу це визначає: нижній індикатор постійно блимає червоним, вмикається пошук Bluetooth, а застосунок показує помилку й відео, як це виправити.\n- Без акумулятора прилад не запускає оновлення по Wi-Fi.\n- Якщо застосунок закрили, прилад сам відновлює пошук, щоб його можна було знайти знову."
+      "notes": "Smoke Tester 2.2.23b (бета).\n- Без акумулятора прилад після будь-якого від'єднання сам знову вмикає пошук Bluetooth.\n- Якщо вставити акумулятор назад, поки прилад на зарядці, червоне блимання зникає, з'являється звичайна індикація заряду, а застосунок без перепідключення показує, що помилку усунено."
     }
   },
   "schema": 3,
